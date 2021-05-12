@@ -9,6 +9,7 @@
                 <th>Hotel Address</th>
                 <th>Email</th>
                 <th>Website</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
@@ -18,10 +19,11 @@
                 <td>{{hotel.hotelAddress}}</td>
                 <td>{{hotel.email}}</td>
                 <td>{{hotel.website}}</td>
+                <td>{{hotel.isActive | actInact }}</td>
                 <td style="text-align:center">
                     <button class="btn btn-primary" (click)="viewHotel(hotel)"> View</button>
                     <button class="btn btn-success" (click)="editHotel(hotel)" style="margin-left: 20px;"> Edit</button>
-                    <button class="btn btn-danger" (click)="deleteHotel(hotel)" style="margin-left: 20px;"> Delete</button>
+                    <button class="btn btn-primary" (click)="deleteHotel(hotel)" style="margin-left: 20px;"> Activate/Inactivate</button>
                 </td>
             </tr>
         </tbody>

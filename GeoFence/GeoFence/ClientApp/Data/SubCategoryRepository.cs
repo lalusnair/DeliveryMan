@@ -139,6 +139,7 @@ namespace GeoFence.ClientApp.Data
             {
                 SubCategoryId = Common.NullableInt("SubCategoryId", reader),
                 SubCategoryName = (string)reader["SubCategoryName"],
+                CategoryName = (string)reader["CategoryName"],
                 IsDeleted = Common.NullableInt("IsDeleted", reader),
                 CategoryId = Common.NullableInt("CategoryId", reader)
             };

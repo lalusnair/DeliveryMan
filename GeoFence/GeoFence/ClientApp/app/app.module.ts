@@ -22,6 +22,7 @@ import { AddItemComponent } from './item/add-item/add-item.component';
 import { EditItemComponent } from './item/edit-item/edit-item.component';
 import { ViewItemComponent } from './item/view-item/view-item.component';
 import { ListItemComponent } from './item/list-item/list-item.component';
+import { ActiveInactivePipe } from './shared/active-inactive.pipe';
 
 @NgModule({
     declarations: [
@@ -41,7 +42,8 @@ import { ListItemComponent } from './item/list-item/list-item.component';
         AddItemComponent,
         EditItemComponent,
         ViewItemComponent,
-        ListItemComponent
+        ListItemComponent,
+        ActiveInactivePipe
     ],
     imports: [
         BrowserModule,

@@ -28,7 +28,9 @@ var ListSubcategoryComponent = /** @class */ (function () {
     ListSubcategoryComponent.prototype.deleteSubCategory = function (subCategory) {
         var _this = this;
         this._subCategoryService.DeleteSubCatgory(subCategory.subCategoryId).subscribe(function (res) {
-            _this.subCategoryData = _this.subCategoryData.filter(function (u) { return u !== subCategory; });
+            var idx = _this.subCategoryData.indexOf(subCategory);
+            subCategory.isDeleted = subCategory.isDeleted == 1 ? 0 : 1;
+            _this.subCategoryData[idx] = subCategory;
         });
     };
     ;

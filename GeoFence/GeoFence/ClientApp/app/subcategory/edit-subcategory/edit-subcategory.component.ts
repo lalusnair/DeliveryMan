@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { debug } from 'util';
 import { SubcategoryService } from 'ClientApp/Services/subcategory.service';
+import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
 
 @Component({
     selector: 'app-edit-subcategory',
@@ -14,7 +15,7 @@ export class EditSubcategoryComponent implements OnInit {
     constructor(private formBuilder: FormBuilder, private router: Router, private apiService: SubcategoryService) { }
 
     editForm: FormGroup;
-
+    Categories: CategoryDropDown[];
     ngOnInit() {
         let subCategoryID = window.localStorage.getItem("editSubCategoryId");
         if (!subCategoryID) {
@@ -22,9 +23,15 @@ export class EditSubcategoryComponent implements OnInit {
             this.router.navigate(['ListSubCategory']);
             return;
         }
+
+        this.apiService.GetCategoryDorpdown().subscribe(res => {
+            this.Categories = res;
+        });
+
         this.editForm = this.formBuilder.group({
             subCategoryId: [],
             categoryId: ['', Validators.required],
+            categoryName: [],
             subCategoryName: ['', Validators.required],
             isDeleted: []
         });

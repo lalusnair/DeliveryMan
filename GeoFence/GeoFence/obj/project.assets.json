@@ -11905,11 +11905,11 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aru\\Desktop\\GeoFence\\GeoFence\\GeoFence.csproj",
+      "projectUniqueName": "C:\\Users\\Aru\\Desktop\\DeliveryMan\\GeoFence\\GeoFence\\GeoFence.csproj",
       "projectName": "GeoFence",
-      "projectPath": "C:\\Users\\Aru\\Desktop\\GeoFence\\GeoFence\\GeoFence.csproj",
+      "projectPath": "C:\\Users\\Aru\\Desktop\\DeliveryMan\\GeoFence\\GeoFence\\GeoFence.csproj",
       "packagesPath": "C:\\Users\\Aru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aru\\Desktop\\GeoFence\\GeoFence\\obj\\",
+      "outputPath": "C:\\Users\\Aru\\Desktop\\DeliveryMan\\GeoFence\\GeoFence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

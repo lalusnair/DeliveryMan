@@ -68,6 +68,30 @@ var ViewHotelComponent = /** @class */ (function () {
     ViewHotelComponent.prototype.backToList = function () {
         this.router.navigate(['ListHotel']);
     };
+    ViewHotelComponent.prototype.ImageClick = function (image64) {
+        var b64toBlob = function (b64Data, contentType, sliceSize) {
+            if (contentType === void 0) { contentType = ''; }
+            if (sliceSize === void 0) { sliceSize = 512; }
+            var byteCharacters = atob(b64Data);
+            var byteArrays = [];
+            for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+                var slice = byteCharacters.slice(offset, offset + sliceSize);
+                var byteNumbers = new Array(slice.length);
+                for (var i = 0; i < slice.length; i++) {
+                    byteNumbers[i] = slice.charCodeAt(i);
+                }
+                var byteArray = new Uint8Array(byteNumbers);
+                byteArrays.push(byteArray);
+            }
+            var blob = new Blob(byteArrays, { type: contentType });
+            return blob;
+        };
+        var blob = b64toBlob(image64.split(',')[1], image64.split(',')[0].split(';')[0].split(':')[1]);
+        var blobUrl = URL.createObjectURL(blob);
+        //let url = window.URL.createObjectURL(blob);
+        //window.location.href = this.sanitizer.bypassSecurityTrustUrl(blobUrl);
+        window.open(blobUrl, '_blank');
+    };
     ViewHotelComponent = __decorate([
         Component({
             selector: 'app-view-hotel',

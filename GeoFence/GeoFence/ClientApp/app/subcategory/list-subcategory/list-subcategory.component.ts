@@ -27,7 +27,9 @@ export class ListSubcategoryComponent implements OnInit {
 
     deleteSubCategory(subCategory: SubCategoryDetailsDTO): void {
         this._subCategoryService.DeleteSubCatgory(subCategory.subCategoryId).subscribe(res => {
-            this.subCategoryData = this.subCategoryData.filter(u => u !== subCategory);
+            var idx = this.subCategoryData.indexOf(subCategory);
+            subCategory.isDeleted = subCategory.isDeleted == 1 ? 0 : 1;
+            this.subCategoryData[idx] = subCategory;
         });
     };
 

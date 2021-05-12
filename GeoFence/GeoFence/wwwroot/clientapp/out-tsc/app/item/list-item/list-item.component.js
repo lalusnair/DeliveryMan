@@ -28,7 +28,9 @@ var ListItemComponent = /** @class */ (function () {
     ListItemComponent.prototype.deleteItem = function (item) {
         var _this = this;
         this._itemService.DeleteItem(item.itemId).subscribe(function (res) {
-            _this.itemData = _this.itemData.filter(function (u) { return u !== item; });
+            var idx = _this.itemData.indexOf(item);
+            item.isdeleted = item.isdeleted == 1 ? 0 : 1;
+            _this.itemData[idx] = item;
         });
     };
     ;

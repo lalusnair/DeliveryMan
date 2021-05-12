@@ -68,20 +68,6 @@ var AddHotelComponent = /** @class */ (function () {
     AddHotelComponent.prototype.backToList = function () {
         this.router.navigate(['ListHotel']);
     };
-    AddHotelComponent.prototype.fileChangeEvent1 = function (fileInput) {
-        var _this = this;
-        if (fileInput.target.files && fileInput.target.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                console.log(e.target.result);
-                console.log(fileInput.target.files);
-                var blob = new Blob(fileInput.target.files, { type: fileInput.target.files[0].type });
-                var url = window.URL.createObjectURL(blob);
-                _this.selectedFileBLOB = _this.sanitizer.bypassSecurityTrustUrl(url);
-            };
-            reader.readAsDataURL(fileInput.target.files[0]);
-        }
-    };
     AddHotelComponent.prototype.ImageClick = function (image64) {
         var b64toBlob = function (b64Data, contentType, sliceSize) {
             if (contentType === void 0) { contentType = ''; }
