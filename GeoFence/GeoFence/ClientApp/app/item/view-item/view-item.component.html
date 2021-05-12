@@ -1,0 +1,52 @@
+<div class="col-md-11 user-container" style="margin-top:1%; margin-bottom:1%;margin-left:4%;border:2px solid">
+    <h2 class="text-center" style="margin-top:1%">View Item<button class="btn btn-info" style="float:right" (click)="backToList()">Back to list</button></h2>
+    <form [formGroup]="editForm">
+        <div class="form-group">
+            <label for=hotel_Name>HotelId:</label>
+            <input type=text readonly formControlName=hotel_Name placeholder="a" name=hotel_Name class="form-control" id=hotel_Name>
+        </div>
+
+        <div class="form-group">
+            <label for=itemName>ItemName:</label>
+            <input type=text readonly formControlName=itemName placeholder="a" name=itemName class="form-control" id=itemName>
+        </div>
+        <div class="form-group">
+            <label for=categoryName>Category</label>
+            <input type=text readonly formControlName=categoryName placeholder="a" name=categoryName class="form-control" id=categoryName>
+        </div>
+
+        <div class="form-group">
+            <label for=subCategoryName>SubCategoryId:</label>
+            <input type=text readonly formControlName=subCategoryName placeholder="a" name=subCategoryName class="form-control" id=subCategoryName>
+        </div>
+        <div class="form-group">
+            <label for=ingrediants>Ingrediants:</label>
+            <input type=text readonly formControlName=ingrediants placeholder="a" name=ingrediants class="form-control" id=ingrediants>
+        </div>
+        <div class="form-group">
+            <label for=sellingPrice>SellingPrice:</label>
+            <input type=text readonly formControlName=sellingPrice placeholder="a" name=sellingPrice class="form-control" id=sellingPrice>
+        </div>
+        <div class="form-group">
+            <label for=ourPrice>OurPrice:</label>
+            <input type=text readonly formControlName=ourPrice placeholder="a" name=ourPrice class="form-control" id=ourPrice>
+        </div>
+        <div class="form-group">
+            <label for=preparationtime>Preparationtime:</label>
+            <input type=text readonly formControlName=preparationtime placeholder="a" name=preparationtime class="form-control" id=preparationtime>
+        </div>
+        <div class="form-group">
+            <label for=itemAvailableTime>ItemAvailableTime:</label>
+            <input type=text readonly formControlName=itemAvailableTime placeholder="a" name=itemAvailableTime class="form-control" id=itemAvailableTime>
+        </div>
+
+        <div class="form-group" style="width:100%;float:left;border:solid 1px black;height:138px;vertical-align:middle">
+            <label for="image">Image:</label>
+            <input required type="text" formControlName="image" placeholder="IsOutdoorAvailable" name="image" class="form-control" id="image" hidden>
+            <span *ngFor="let n of cardImageBase64arr">
+                <img [src]="n" style="height:128px;width:128px;cursor:pointer;margin-left:5px" (click)="ImageClick(n)" />
+            </span>
+        </div>
+        <button class="btn btn-success" style="width:10%;margin-top:2%;margin-bottom:2%">Add</button>
+    </form>
+</div>

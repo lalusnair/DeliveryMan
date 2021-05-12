@@ -1,0 +1,25 @@
+<div class="col-md-11 user-container" style="margin-left:5%;margin-top:2%">
+    <h2 style="margin: auto"> Sub Category Details</h2>
+    <button class="btn btn-danger" style="width:100px" (click)="addSubCategory()"> Add Sub Category</button><br />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Category ID</th>
+                <th>Sub Category Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of subCategoryData">
+                <td>{{category.subCategoryId}}</td>
+                <td>{{category.categoryId}}</td>
+                <td>{{category.subCategoryName}}</td>
+                <td style="text-align:center">
+                    <button class="btn btn-primary" (click)="viewSubCategory(category)"> View</button>
+                    <button class="btn btn-success" (click)="editSubCategory(category)" style="margin-left: 20px;"> Edit</button>
+                    <button class="btn btn-danger" (click)="deleteSubCategory(category)" style="margin-left: 20px;"> Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
