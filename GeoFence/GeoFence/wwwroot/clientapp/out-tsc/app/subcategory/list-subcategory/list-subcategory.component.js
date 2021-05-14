@@ -29,7 +29,7 @@ var ListSubcategoryComponent = /** @class */ (function () {
         var _this = this;
         this._subCategoryService.DeleteSubCatgory(subCategory.subCategoryId).subscribe(function (res) {
             var idx = _this.subCategoryData.indexOf(subCategory);
-            subCategory.isDeleted = subCategory.isDeleted == 1 ? 0 : 1;
+            subCategory.isActive = subCategory.isActive == 1 ? 0 : 1;
             _this.subCategoryData[idx] = subCategory;
         });
     };

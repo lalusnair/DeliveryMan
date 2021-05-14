@@ -32,7 +32,7 @@ var ViewItemComponent = /** @class */ (function () {
             image: [],
             hotel_Name: [],
             categoryName: [],
-            isdeleted: [],
+            isActive: [],
             subCategoryName: [],
             itemName: [],
             categoryId: [],
@@ -45,7 +45,7 @@ var ViewItemComponent = /** @class */ (function () {
         });
         this.apiService.GetItemById(parseInt(itemId))
             .subscribe(function (data) {
-            _this.cardImageBase64arr = data.image.split('^');
+            _this.cardImageBase64arr = data.image != null ? data.image.split('^') : [];
             _this.editForm.setValue(data);
         });
     };

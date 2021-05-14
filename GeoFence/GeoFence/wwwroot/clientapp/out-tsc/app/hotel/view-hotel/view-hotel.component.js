@@ -76,8 +76,7 @@ var ViewHotelComponent = /** @class */ (function () {
             for (var i = 0; i < _this.workingDaysArr.length; i++) {
                 checkArray.push(new FormControl(_this.workingDaysArr[i]));
             }
-            _this.editForm.setValue(data);
-            _this.editForm.controls['checkArray'].setValue(checkArray);
+            _this.editForm.patchValue(data);
         });
     };
     ViewHotelComponent.prototype.backToList = function () {

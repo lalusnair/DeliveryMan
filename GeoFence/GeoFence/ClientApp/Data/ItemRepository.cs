@@ -21,7 +21,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.GetAllItemDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_GetAllItemDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     var response = new List<Item>();
@@ -43,7 +43,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.GetItemDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_GetItemDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -65,7 +65,7 @@ namespace GeoFence.ClientApp.Data
         public async Task<bool> Insert(string itemJson)
         {
             using (SqlConnection sql = new SqlConnection(_connectionString)){
-                using (SqlCommand cmd = new SqlCommand("da.CreateItem", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_CreateItem", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", 4));
@@ -81,7 +81,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.UpdateItem", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_UpdateItem", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -97,7 +97,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.DeleteItem", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_DeleteItem", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -120,7 +120,7 @@ namespace GeoFence.ClientApp.Data
                 Image = Common.NullableString("Image", reader),
                 Ingrediants = Common.NullableString("Ingrediants", reader),
                 Hotel_Name = Common.NullableString("Hotel_Name", reader),
-                Isdeleted = Common.NullableInt("Isdeleted", reader),
+                IsActive = Common.NullableInt("IsActive", reader),
                 ItemAvailableTime = Common.NullableDecimal("ItemAvailableTime", reader),
                 ItemId = Common.NullableInt("ItemId", reader),
                 ItemName = Common.NullableString("ItemName", reader),

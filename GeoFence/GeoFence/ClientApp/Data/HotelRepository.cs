@@ -21,7 +21,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.GetAllHotelDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_GetAllHotelDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     var response = new List<HotelDTO>();
@@ -43,7 +43,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.SelectHotel", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_SelectHotel", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     var response = new List<HotelDropDown>();
@@ -65,7 +65,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.GetHotelDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_GetHotelDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -88,7 +88,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.CreateHotelDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_CreateHotelDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", 4));
@@ -104,7 +104,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.UpdateHotelDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_UpdateHotelDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -120,7 +120,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.DeleteHotelDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_DeleteHotelDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));

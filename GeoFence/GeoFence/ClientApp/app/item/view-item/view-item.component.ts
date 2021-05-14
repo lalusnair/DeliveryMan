@@ -28,7 +28,7 @@ export class ViewItemComponent implements OnInit {
             image: [],
             hotel_Name: [],
             categoryName: [],
-            isdeleted: [],
+            isActive: [],
             subCategoryName: [],
             itemName: [],
             categoryId: [],
@@ -42,7 +42,7 @@ export class ViewItemComponent implements OnInit {
 
         this.apiService.GetItemById(parseInt(itemId))
             .subscribe(data => {
-                this.cardImageBase64arr = data.image.split('^');
+                this.cardImageBase64arr = data.image != null ?data.image.split('^'):[];
                 this.editForm.setValue(data);
             });
     }

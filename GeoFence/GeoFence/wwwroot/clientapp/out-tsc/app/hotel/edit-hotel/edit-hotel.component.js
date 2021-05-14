@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from "@angular/forms";
+import { FormBuilder, Validators, FormControl } from "@angular/forms";
 import { Router } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
 var EditHotelComponent = /** @class */ (function () {
@@ -16,6 +16,14 @@ var EditHotelComponent = /** @class */ (function () {
         this.formBuilder = formBuilder;
         this.router = router;
         this.apiService = apiService;
+        this.workingDaysArr = [];
+        this.DaysArray = [{ name: 'Mon', value: 'Monday' },
+            { name: 'Tue', value: 'Tuesday' },
+            { name: 'Wed', value: 'Wednesday' },
+            { name: 'Thu', value: 'Thursday' },
+            { name: 'Fri', value: 'Friday' },
+            { name: 'Sat', value: 'Saturday' },
+            { name: 'Sun', value: 'Sunday' }];
     }
     EditHotelComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -55,13 +63,52 @@ var EditHotelComponent = /** @class */ (function () {
             isActive: [],
             creationDate: [],
             modifiedDate: [],
-            image: []
+            image: [],
+            checkArray: this.formBuilder.array([])
         });
         this.apiService.GetHotelById(parseInt(hotelID))
             .subscribe(function (data) {
             console.log(data);
+            _this.workingDaysArr = data.workingDays != null ? data.workingDays.split(';') : [];
+            var checkArray = _this.editForm.get('checkArray');
+            for (var i = 0; i < _this.workingDaysArr.length; i++) {
+                checkArray.push(new FormControl(_this.workingDaysArr[i]));
+            }
+            _this.editForm.patchValue(data);
             _this.editForm.setValue(data);
         });
+    };
+    EditHotelComponent.prototype.isChecked = function (val) {
+        var checkArray = this.editForm.get('checkArray');
+        var res = false;
+        checkArray.controls.forEach(function (item) {
+            if (item.value == val) {
+                res = true;
+            }
+        });
+        return res;
+    };
+    EditHotelComponent.prototype.onCheckboxChange = function (e) {
+        var checkArray = this.editForm.get('checkArray');
+        if (e.target.checked) {
+            checkArray.push(new FormControl(e.target.value));
+        }
+        else {
+            var i_1 = 0;
+            checkArray.controls.forEach(function (item) {
+                if (item.value == e.target.value) {
+                    checkArray.removeAt(i_1);
+                    return;
+                }
+                i_1++;
+            });
+        }
+        var value = '';
+        checkArray.controls.forEach(function (item) {
+            value = value + item.value + ';';
+        });
+        value = value.substring(0, value.lastIndexOf(';'));
+        this.editForm.controls["workingDays"].setValue(value);
     };
     EditHotelComponent.prototype.onSubmit = function () {
         var _this = this;

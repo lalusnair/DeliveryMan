@@ -40,7 +40,7 @@ var EditItemComponent = /** @class */ (function () {
             image: [],
             hotel_Name: [],
             categoryName: [],
-            isdeleted: [],
+            isActive: [],
             subCategoryName: [],
             itemName: [],
             categoryId: [],

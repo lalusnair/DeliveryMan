@@ -31,7 +31,7 @@ export class ListCategoryComponent implements OnInit {
     deleteCategory(category: CategoryDetailsDTO): void {
         this._categoryService.DeleteCatgory(category.categoryId).subscribe(res => {
             var idx = this.categoryData.indexOf(category);
-            category.isDeleted = category.isDeleted == 1 ? 0 : 1;
+            category.isActive = category.isActive == 1 ? 0 : 1;
             this.categoryData[idx] = category;
         });
     };

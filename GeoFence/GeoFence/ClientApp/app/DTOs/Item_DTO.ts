@@ -13,5 +13,5 @@
     ourPrice: number;
     preparationtime: number;
     itemAvailableTime: number;
-    isdeleted: number;
+    isActive: number;
 }

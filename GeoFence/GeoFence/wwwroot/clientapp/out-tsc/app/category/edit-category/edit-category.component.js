@@ -28,7 +28,7 @@ var EditCategoryComponent = /** @class */ (function () {
         this.editForm = this.formBuilder.group({
             categoryId: [],
             categoryName: ['', Validators.required],
-            isDeleted: []
+            isActive: []
         });
         this.apiService.GetCategoryById(parseInt(categoryID))
             .subscribe(function (data) {

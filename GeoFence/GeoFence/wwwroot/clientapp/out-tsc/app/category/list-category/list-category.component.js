@@ -29,7 +29,7 @@ var ListCategoryComponent = /** @class */ (function () {
         var _this = this;
         this._categoryService.DeleteCatgory(category.categoryId).subscribe(function (res) {
             var idx = _this.categoryData.indexOf(category);
-            category.isDeleted = category.isDeleted == 1 ? 0 : 1;
+            category.isActive = category.isActive == 1 ? 0 : 1;
             _this.categoryData[idx] = category;
         });
     };

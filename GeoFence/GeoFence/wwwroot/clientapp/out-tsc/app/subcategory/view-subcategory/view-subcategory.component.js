@@ -28,6 +28,7 @@ var ViewSubcategoryComponent = /** @class */ (function () {
         this.editForm = this.formBuilder.group({
             subCategoryId: [],
             categoryId: ['', Validators.required],
+            categoryName: ['', Validators.required],
             subCategoryName: ['', Validators.required]
         });
         this.apiService.GetSubCategoryById(parseInt(categoryID))

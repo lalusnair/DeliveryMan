@@ -33,7 +33,7 @@ export class EditSubcategoryComponent implements OnInit {
             categoryId: ['', Validators.required],
             categoryName: [],
             subCategoryName: ['', Validators.required],
-            isDeleted: []
+            isActive: []
         });
 
         this.apiService.GetSubCategoryById(parseInt(subCategoryID))

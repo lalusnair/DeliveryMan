@@ -3,7 +3,7 @@
     categoryId: number;
     categoryName: string;
     subCategoryName: string;
-    isDeleted: number;
+    isActive: number;
 }
 export class SubCategoryDropDown {
     subCategoryId: number;

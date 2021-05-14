@@ -2,8 +2,6 @@
 <div class="col-md-11 user-container" style="margin-top:1%; margin-bottom:1%;margin-left:4%;border:2px solid">
     <h2 class="text-center" style="margin-top:1%">Add Hotel<button class="btn btn-info" style="float:right" (click)="backToList()">Back to list</button></h2>
     <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
-        <p>Form value: {{ addForm.value | json }}</p>
-        <p>Form status: {{ addForm.status | json }}</p>
         <div class="form-group" style="width:48%;float:left">
             <label for="hotel_Name">Hotel Name:</label>
             <input required type="text" formControlName="hotel_Name" placeholder="Hotel Name" name="hotel_Name" class="form-control" id="hotel_Name">
@@ -96,7 +94,7 @@
             <label for="workingDays">WorkingDays:</label><br />
             <div *ngFor="let day of DaysArray; let i=index" style="float:left;margin-left:15px">
                 <label>
-                    <input type="checkbox" id="{{day.value}}" [checked]="isChecked(day.value)"  [value]="day.value" (change)="onCheckboxChange($event)" />
+                    <input type="checkbox" id="{{day.value}}"  [value]="day.value" (change)="onCheckboxChange($event)" />
                     {{day.name}}
                 </label>
             </div>

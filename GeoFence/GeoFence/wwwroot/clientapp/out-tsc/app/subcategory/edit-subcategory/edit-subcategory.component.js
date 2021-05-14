@@ -33,7 +33,7 @@ var EditSubcategoryComponent = /** @class */ (function () {
             categoryId: ['', Validators.required],
             categoryName: [],
             subCategoryName: ['', Validators.required],
-            isDeleted: []
+            isActive: []
         });
         this.apiService.GetSubCategoryById(parseInt(subCategoryID))
             .subscribe(function (data) {

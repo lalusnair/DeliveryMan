@@ -9,7 +9,7 @@ namespace GeoFence.ClientApp.Models
     {
         public int? CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public int? IsDeleted { get; set; }
+        public int? IsActive { get; set; }
 
     }
 

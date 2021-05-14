@@ -22,6 +22,6 @@ namespace GeoFence.ClientApp.Models
         public decimal? OurPrice { get; set; }
         public decimal? Preparationtime { get; set; }
         public decimal? ItemAvailableTime { get; set; }
-        public int? Isdeleted { get; set; }
+        public int? IsActive { get; set; }
     }
 }

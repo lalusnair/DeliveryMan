@@ -29,7 +29,7 @@ export class ListItemComponent implements OnInit {
     deleteItem(item: ItemDetailsDTO): void {
         this._itemService.DeleteItem(item.itemId).subscribe(res => {
             var idx = this.itemData.indexOf(item);
-            item.isdeleted = item.isdeleted == 1 ? 0 : 1;
+            item.isActive = item.isActive == 1 ? 0 : 1;
             this.itemData[idx] = item;
         });
     };

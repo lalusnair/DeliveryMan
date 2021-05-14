@@ -44,7 +44,7 @@ export class EditItemComponent implements OnInit {
             image: [],
             hotel_Name: [],
             categoryName: [],
-            isdeleted: [],
+            isActive: [],
             subCategoryName: [],
             itemName: [],
             categoryId: [],

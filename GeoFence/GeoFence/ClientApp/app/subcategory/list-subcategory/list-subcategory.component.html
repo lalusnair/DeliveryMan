@@ -13,7 +13,7 @@
             <tr *ngFor="let category of subCategoryData">
                 <td>{{category.categoryName}}</td>
                 <td>{{category.subCategoryName}}</td>
-                <td>{{category.isDeleted | actInact}}</td>
+                <td>{{category.isActive | actInact}}</td>
                 <td style="text-align:center">
                     <button class="btn btn-primary" (click)="viewSubCategory(category)"> View</button>
                     <button class="btn btn-success" (click)="editSubCategory(category)" style="margin-left: 20px;"> Edit</button>
