@@ -134,7 +134,7 @@
             <input required type="text" formControlName="image" placeholder="IsOutdoorAvailable" name="image" class="form-control" id="image" hidden>
             <input type="file" (change)="fileChangeEvent($event)" class="fileInputProfile">
             <span *ngFor="let n of cardImageBase64arr">
-                <button>*</button>
+                <button title="Remove Image" style="background-color:red;font-size:medium;font-weight:bold;color:white; border-radius:50%" type="button" (click)="DeleteImage(n)">X</button>
                 <img [src]="n" style="height:128px;width:128px;cursor:pointer;margin-left:5px" (click)="ImageClick(n)" />
             </span>
         </div>

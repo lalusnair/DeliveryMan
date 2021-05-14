@@ -51,6 +51,14 @@ var AddItemComponent = /** @class */ (function () {
     AddItemComponent.prototype.backToList = function () {
         this.router.navigate(['ListItem']);
     };
+    AddItemComponent.prototype.DeleteImage = function (image) {
+        this.cardImageBase64arr.splice(this.cardImageBase64arr.indexOf(image), 1);
+        var imageToDB = '';
+        for (var i = 0; i < this.cardImageBase64arr.length; i++) {
+            imageToDB = imageToDB + '^' + this.cardImageBase64arr[i];
+        }
+        this.addForm.controls['image'].setValue(imageToDB);
+    };
     AddItemComponent.prototype.changeSubCategory = function (e) {
         var _this = this;
         this.apiService.GetSubCategoryDorpdown(parseInt(e.target.value)).subscribe(function (res) {

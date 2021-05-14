@@ -29,7 +29,8 @@ var ViewSubcategoryComponent = /** @class */ (function () {
             subCategoryId: [],
             categoryId: ['', Validators.required],
             categoryName: ['', Validators.required],
-            subCategoryName: ['', Validators.required]
+            subCategoryName: ['', Validators.required],
+            isActive: ['', Validators.required],
         });
         this.apiService.GetSubCategoryById(parseInt(categoryID))
             .subscribe(function (data) {

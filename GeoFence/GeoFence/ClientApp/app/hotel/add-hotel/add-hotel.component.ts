@@ -24,7 +24,7 @@ export class AddHotelComponent implements OnInit {
     isImageSaved: boolean;
     selectedFileBLOB
     selectedFileBLOBarr
-    
+
     DaysArray: Array<any> = [{ name: 'Mon', value: 'Monday' },
     { name: 'Tue', value: 'Tuesday' },
     { name: 'Wed', value: 'Wednesday' },
@@ -108,7 +108,14 @@ export class AddHotelComponent implements OnInit {
         this.router.navigate(['ListHotel']);
     }
 
-
+    DeleteImage(image: string) {
+        this.cardImageBase64arr.splice(this.cardImageBase64arr.indexOf(image), 1);
+        var imageToDB = '';
+        for (var i = 0; i < this.cardImageBase64arr.length; i++) {
+            imageToDB = imageToDB + '^' + this.cardImageBase64arr[i];
+        }
+        this.addForm.controls['image'].setValue(imageToDB);
+    }
     ImageClick(image64: string) {
         const b64toBlob = (b64Data, contentType = '', sliceSize = 512) => {
             const byteCharacters = atob(b64Data);

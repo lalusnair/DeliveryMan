@@ -98,6 +98,14 @@ var AddHotelComponent = /** @class */ (function () {
     AddHotelComponent.prototype.backToList = function () {
         this.router.navigate(['ListHotel']);
     };
+    AddHotelComponent.prototype.DeleteImage = function (image) {
+        this.cardImageBase64arr.splice(this.cardImageBase64arr.indexOf(image), 1);
+        var imageToDB = '';
+        for (var i = 0; i < this.cardImageBase64arr.length; i++) {
+            imageToDB = imageToDB + '^' + this.cardImageBase64arr[i];
+        }
+        this.addForm.controls['image'].setValue(imageToDB);
+    };
     AddHotelComponent.prototype.ImageClick = function (image64) {
         var b64toBlob = function (b64Data, contentType, sliceSize) {
             if (contentType === void 0) { contentType = ''; }

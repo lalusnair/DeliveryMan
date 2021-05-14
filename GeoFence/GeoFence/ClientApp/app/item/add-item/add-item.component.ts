@@ -66,6 +66,15 @@ export class AddItemComponent implements OnInit {
         this.router.navigate(['ListItem']);
     }
 
+    DeleteImage(image: string) {
+        this.cardImageBase64arr.splice(this.cardImageBase64arr.indexOf(image), 1);
+        var imageToDB = '';
+        for (var i = 0; i < this.cardImageBase64arr.length; i++) {
+            imageToDB = imageToDB + '^' + this.cardImageBase64arr[i];
+        }
+        this.addForm.controls['image'].setValue(imageToDB);
+    }
+
     changeSubCategory(e) {
         this.apiService.GetSubCategoryDorpdown(parseInt(e.target.value)).subscribe(res => {
             this.SubCategories = res;
