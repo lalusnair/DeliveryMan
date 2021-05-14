@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { FormBuilder, FormGroup, FormArray, Validators, FormControl } from "@angular/forms";
 import { Router, RouterLinkWithHref } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Component({
     selector: 'app-add-hotel',
@@ -23,6 +24,14 @@ export class AddHotelComponent implements OnInit {
     isImageSaved: boolean;
     selectedFileBLOB
     selectedFileBLOBarr
+    
+    DaysArray: Array<any> = [{ name: 'Mon', value: 'Monday' },
+    { name: 'Tue', value: 'Tuesday' },
+    { name: 'Wed', value: 'Wednesday' },
+    { name: 'Thu', value: 'Thursday' },
+    { name: 'Fri', value: 'Friday' },
+    { name: 'Sat', value: 'Saturday' },
+    { name: 'Sun', value: 'Sunday' }];
 
     ngOnInit() {
         this.addForm = this.formBuilder.group({
@@ -52,9 +61,9 @@ export class AddHotelComponent implements OnInit {
             hotelRating: [],
             isParkingAvailable: ['', Validators.required],
             isOutdoorAvailable: ['', Validators.required],
-            image: []
+            image: [],
+            checkArray: this.formBuilder.array([])
         });
-
     }
 
     onSubmit() {
@@ -69,11 +78,37 @@ export class AddHotelComponent implements OnInit {
             alert("detailsz");
         }
     }
+
+
+
+    onCheckboxChange(e) {
+        const checkArray: FormArray = this.addForm.get('checkArray') as FormArray;
+
+        if (e.target.checked) {
+            checkArray.push(new FormControl(e.target.value));
+        } else {
+            let i: number = 0;
+            checkArray.controls.forEach((item: FormControl) => {
+                if (item.value == e.target.value) {
+                    checkArray.removeAt(i);
+                    return;
+                }
+                i++;
+            });
+        }
+        var value = '';
+        checkArray.controls.forEach((item: FormControl) => {
+            value = value + item.value + ';';
+        });
+        value = value.substring(0, value.lastIndexOf(';'));
+        this.addForm.controls["workingDays"].setValue(value);
+    }
+
     backToList() {
         this.router.navigate(['ListHotel']);
     }
 
- 
+
     ImageClick(image64: string) {
         const b64toBlob = (b64Data, contentType = '', sliceSize = 512) => {
             const byteCharacters = atob(b64Data);

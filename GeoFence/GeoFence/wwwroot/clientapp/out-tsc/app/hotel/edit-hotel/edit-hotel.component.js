@@ -55,6 +55,7 @@ var EditHotelComponent = /** @class */ (function () {
             isActive: [],
             creationDate: [],
             modifiedDate: [],
+            image: []
         });
         this.apiService.GetHotelById(parseInt(hotelID))
             .subscribe(function (data) {

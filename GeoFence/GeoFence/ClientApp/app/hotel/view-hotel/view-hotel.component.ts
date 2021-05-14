@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { FormBuilder, FormGroup, Validators, FormArray, FormControl } from "@angular/forms";
 import { Router } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
 import { debug } from 'util';
@@ -15,6 +15,15 @@ export class ViewHotelComponent implements OnInit {
 
     editForm: FormGroup;
     cardImageBase64arr: string[] = [];
+
+    workingDaysArr: Array<string> = [];
+    DaysArray: Array<any> = [{ name: 'Mon', value: 'Monday' },
+    { name: 'Tue', value: 'Tuesday' },
+    { name: 'Wed', value: 'Wednesday' },
+    { name: 'Thu', value: 'Thursday' },
+    { name: 'Fri', value: 'Friday' },
+    { name: 'Sat', value: 'Saturday' },
+    { name: 'Sun', value: 'Sunday' }];
 
     ngOnInit() {
         let hotelID = window.localStorage.getItem("editUserId");
@@ -54,20 +63,37 @@ export class ViewHotelComponent implements OnInit {
             isActive: ['', Validators.required],
             creationDate: [],
             modifiedDate: [],
-            image: []
+            image: [],
+            checkArray: this.formBuilder.array([])
         });
 
         this.apiService.GetHotelById(parseInt(hotelID))
             .subscribe(data => {
                 console.log(data);
-                this.cardImageBase64arr = data.image.split('^');
-                this.editForm.setValue(data);
-            });
+                this.cardImageBase64arr = data.image != null ? data.image.split('^') : [];
+                this.workingDaysArr = data.workingDays != null ? data.workingDays.split(';') : [];
+                const checkArray: FormArray = this.editForm.get('checkArray') as FormArray;
+                for (let i = 0; i < this.workingDaysArr.length; i++) {
+                    checkArray.push(new FormControl(this.workingDaysArr[i]));
+                }                    
+                this.editForm.patchValue(data);
+            });        
     }
-
     backToList() {
         this.router.navigate(['ListHotel']);
     }
+
+    isChecked(val: string) {
+        const checkArray: FormArray = this.editForm.get('checkArray') as FormArray;
+        var res = false
+        checkArray.controls.forEach((item: FormControl) => {
+            if (item.value == val) {
+                res = true;
+            }
+        });
+        return res;
+    }
+
     ImageClick(image64: string) {
         const b64toBlob = (b64Data, contentType = '', sliceSize = 512) => {
             const byteCharacters = atob(b64Data);
