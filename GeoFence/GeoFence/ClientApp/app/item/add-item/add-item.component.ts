@@ -7,6 +7,7 @@ import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
 import { SubCategoryDropDown } from 'ClientApp/app/DTOs/SubCategory_DTO';
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
+import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
 
 @Component({
     selector: 'app-add-item',
@@ -19,6 +20,7 @@ export class AddItemComponent implements OnInit {
 
     constructor(private formBuilder: FormBuilder,
         private router: Router,
+        private func: FuncServiceService,
         private apiService: ItemService) { }
 
 

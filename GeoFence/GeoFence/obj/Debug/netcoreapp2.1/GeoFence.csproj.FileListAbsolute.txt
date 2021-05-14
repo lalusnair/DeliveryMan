@@ -17,7 +17,6 @@ C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFe
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFence.runtimeconfig.dev.json
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFence.dll
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFence.pdb
-C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.csprojAssemblyReference.cache
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.csproj.CoreCompileInputs.cache
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.RazorAssemblyInfo.cache
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.RazorAssemblyInfo.cs
