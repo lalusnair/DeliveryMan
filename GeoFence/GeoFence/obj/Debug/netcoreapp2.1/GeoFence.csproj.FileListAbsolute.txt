@@ -25,3 +25,4 @@ C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFe
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.RazorTargetAssemblyInfo.cache
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.dll
 C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.pdb
+C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.csprojAssemblyReference.cache
