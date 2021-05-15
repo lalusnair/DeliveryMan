@@ -1,0 +1,23 @@
+<div class="col-md-11 user-container" style="margin-top:1%; margin-bottom:1%;margin-left:4%;border:2px solid">
+    <div>
+        <h2 class="text-center" style="margin-top:1%">
+            View Sub Category
+            <button class="btn btn-info" style="float:right" (click)="backToList()">Back to list</button>
+        </h2>
+    </div>
+
+    <form [formGroup]="editForm">
+
+        <div class="form-group">
+            <label for="categoryName">Category</label>
+            <input readonly type="text" formControlName="categoryName" name="categoryName" class="form-control" id="categoryName">
+        </div>
+        <div class="form-group">
+            <label for="subCategoryName">Category:</label>
+            <input readonly type="text" formControlName="subCategoryName" name="subCategoryName" class="form-control" id="subCategoryName">
+        </div>
+        <span style="width:10%; margin-left:46%;margin-top:2%;margin-bottom:2%;height:50px">
+            &nbsp;
+        </span>
+    </form>
+</div>
