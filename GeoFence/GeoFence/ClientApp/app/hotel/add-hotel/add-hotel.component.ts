@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { FormBuilder, FormGroup, FormArray, Validators, FormControl } from "@angular/forms";
 import { Router, RouterLinkWithHref } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
+import { forEach } from '@angular/router/src/utils/collection';
+import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
 
 @Component({
     selector: 'app-add-hotel',
@@ -13,6 +15,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class AddHotelComponent implements OnInit {
     constructor(private formBuilder: FormBuilder,
         private router: Router,
+        private func: FuncServiceService,
         private sanitizer: DomSanitizer,
         private apiService: HotelService) { }
 
@@ -23,6 +26,14 @@ export class AddHotelComponent implements OnInit {
     isImageSaved: boolean;
     selectedFileBLOB
     selectedFileBLOBarr
+
+    DaysArray: Array<any> = [{ name: 'Mon', value: 'Monday' },
+    { name: 'Tue', value: 'Tuesday' },
+    { name: 'Wed', value: 'Wednesday' },
+    { name: 'Thu', value: 'Thursday' },
+    { name: 'Fri', value: 'Friday' },
+    { name: 'Sat', value: 'Saturday' },
+    { name: 'Sun', value: 'Sunday' }];
 
     ngOnInit() {
         this.addForm = this.formBuilder.group({
@@ -52,9 +63,9 @@ export class AddHotelComponent implements OnInit {
             hotelRating: [],
             isParkingAvailable: ['', Validators.required],
             isOutdoorAvailable: ['', Validators.required],
-            image: []
+            image: [],
+            checkArray: this.formBuilder.array([])
         });
-
     }
 
     onSubmit() {
@@ -69,40 +80,48 @@ export class AddHotelComponent implements OnInit {
             alert("detailsz");
         }
     }
+
+
+
+    onCheckboxChange(e) {
+        const checkArray: FormArray = this.addForm.get('checkArray') as FormArray;
+
+        if (e.target.checked) {
+            checkArray.push(new FormControl(e.target.value));
+        } else {
+            let i: number = 0;
+            checkArray.controls.forEach((item: FormControl) => {
+                if (item.value == e.target.value) {
+                    checkArray.removeAt(i);
+                    return;
+                }
+                i++;
+            });
+        }
+        var value = '';
+        checkArray.controls.forEach((item: FormControl) => {
+            value = value + item.value + ';';
+        });
+        value = value.substring(0, value.lastIndexOf(';'));
+        this.addForm.controls["workingDays"].setValue(value);
+    }
+
     backToList() {
         this.router.navigate(['ListHotel']);
     }
 
- 
-    ImageClick(image64: string) {
-        const b64toBlob = (b64Data, contentType = '', sliceSize = 512) => {
-            const byteCharacters = atob(b64Data);
-            const byteArrays = [];
-
-            for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
-                const slice = byteCharacters.slice(offset, offset + sliceSize);
-
-                const byteNumbers = new Array(slice.length);
-                for (let i = 0; i < slice.length; i++) {
-                    byteNumbers[i] = slice.charCodeAt(i);
-                }
-
-                const byteArray = new Uint8Array(byteNumbers);
-                byteArrays.push(byteArray);
-            }
-
-            const blob = new Blob(byteArrays, { type: contentType });
-            return blob;
+    DeleteImage(image: string) {
+        this.cardImageBase64arr.splice(this.cardImageBase64arr.indexOf(image), 1);
+        var imageToDB = '';
+        for (var i = 0; i < this.cardImageBase64arr.length; i++) {
+            imageToDB = imageToDB + '^' + this.cardImageBase64arr[i];
         }
-        const blob = b64toBlob(image64.split(',')[1], image64.split(',')[0].split(';')[0].split(':')[1]);
-        const blobUrl = URL.createObjectURL(blob);
-
-        //let url = window.URL.createObjectURL(blob);
-
-        //window.location.href = this.sanitizer.bypassSecurityTrustUrl(blobUrl);
-        window.open(blobUrl, '_blank');
-
+        this.addForm.controls['image'].setValue(imageToDB);
     }
+    ImageClick(image64: string) {
+        this.func.openImageInNewWindow(image64);
+    }
+
     fileChangeEvent(fileInput: any) {
         if (this.cardImageBase64arr.length == 5) {
             return false;

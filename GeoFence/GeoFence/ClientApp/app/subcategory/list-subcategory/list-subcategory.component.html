@@ -4,20 +4,20 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Category ID</th>
+                <th>Category</th>
                 <th>Sub Category Name</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let category of subCategoryData">
-                <td>{{category.subCategoryId}}</td>
-                <td>{{category.categoryId}}</td>
+                <td>{{category.categoryName}}</td>
                 <td>{{category.subCategoryName}}</td>
+                <td>{{category.isActive | actInact}}</td>
                 <td style="text-align:center">
                     <button class="btn btn-primary" (click)="viewSubCategory(category)"> View</button>
                     <button class="btn btn-success" (click)="editSubCategory(category)" style="margin-left: 20px;"> Edit</button>
-                    <button class="btn btn-danger" (click)="deleteSubCategory(category)" style="margin-left: 20px;"> Delete</button>
+                    <button class="btn btn-primary" (click)="deleteSubCategory(category)" style="margin-left: 20px;"> Activate/Inactivate</button>
                 </td>
             </tr>
         </tbody>

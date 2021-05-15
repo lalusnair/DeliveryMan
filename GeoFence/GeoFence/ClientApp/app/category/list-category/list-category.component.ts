@@ -16,7 +16,6 @@ export class ListCategoryComponent implements OnInit {
 
     constructor(private router: Router, categoryServ: CategoryService) {
         this._categoryService = categoryServ;
-
     }
 
     ngOnInit() {
@@ -31,7 +30,9 @@ export class ListCategoryComponent implements OnInit {
 
     deleteCategory(category: CategoryDetailsDTO): void {
         this._categoryService.DeleteCatgory(category.categoryId).subscribe(res => {
-            this.categoryData = this.categoryData.filter(u => u !== category);
+            var idx = this.categoryData.indexOf(category);
+            category.isActive = category.isActive == 1 ? 0 : 1;
+            this.categoryData[idx] = category;
         });
     };
     editCategory(category: CategoryDetailsDTO): void {

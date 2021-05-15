@@ -18,9 +18,14 @@ var AddSubcategoryComponent = /** @class */ (function () {
         this.apiService = apiService;
     }
     AddSubcategoryComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.apiService.GetCategoryDorpdown().subscribe(function (res) {
+            _this.Categories = res;
+        });
         this.addForm = this.formBuilder.group({
             subCategoryId: [],
             categoryId: [],
+            categoryName: [],
             subCategoryName: []
         });
     };

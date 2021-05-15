@@ -19,6 +19,7 @@ var ListHotelComponent = /** @class */ (function () {
         var _this = this;
         this._hotelServ.GetAllHotels().subscribe(function (res) {
             _this.hotelData = res;
+            console.log(_this.hotelData);
         });
     };
     ListHotelComponent.prototype.addHotel = function () {
@@ -27,9 +28,10 @@ var ListHotelComponent = /** @class */ (function () {
     ;
     ListHotelComponent.prototype.deleteHotel = function (hotel) {
         var _this = this;
-        console.log(hotel);
         this._hotelServ.DeleteHotel(hotel.hotel_Id).subscribe(function (res) {
-            _this.hotelData = _this.hotelData.filter(function (u) { return u !== hotel; });
+            var idx = _this.hotelData.indexOf(hotel);
+            hotel.isActive = hotel.isActive == 1 ? 0 : 1;
+            _this.hotelData[idx] = hotel;
         });
     };
     ;

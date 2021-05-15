@@ -4,18 +4,19 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Category Name</th>
+                <th>Status</th>
+
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let category of categoryData">
-                <td>{{category.categoryId}}</td>
                 <td>{{category.categoryName}}</td>
+                <td>{{category.isActive | actInact}}</td>
                 <td style="text-align:center">
                     <button class="btn btn-primary" (click)="viewCategory(category)"> View</button>
                     <button class="btn btn-success" (click)="editCategory(category)" style="margin-left: 20px;"> Edit</button>
-                    <button class="btn btn-danger" (click)="deleteCategory(category)" style="margin-left: 20px;"> Delete</button>
+                    <button class="btn btn-primary" (click)="deleteCategory(category)" style="margin-left: 20px;"> Activate/Inactivate</button>
                 </td>
             </tr>
         </tbody>

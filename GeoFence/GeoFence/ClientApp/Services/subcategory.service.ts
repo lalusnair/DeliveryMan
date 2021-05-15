@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { debug } from 'util';
 import { SubCategoryDetailsDTO } from 'ClientApp/app/DTOs/SubCategory_DTO';
+import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,9 @@ export class SubcategoryService {
         this.Http = http;
         this.BaseURL = baseUrl;
     }
-
+    GetCategoryDorpdown() {
+        return this.Http.get<CategoryDropDown[]>(this.BaseURL + 'api/Data/GetCategoriesForDropDown');
+    }
     GetAllSubCategories() {
         return this.Http.get<SubCategoryDetailsDTO[]>(this.BaseURL + 'api/Data/GetAllSubCategories');
     }

@@ -28,7 +28,9 @@ var ListCategoryComponent = /** @class */ (function () {
     ListCategoryComponent.prototype.deleteCategory = function (category) {
         var _this = this;
         this._categoryService.DeleteCatgory(category.categoryId).subscribe(function (res) {
-            _this.categoryData = _this.categoryData.filter(function (u) { return u !== category; });
+            var idx = _this.categoryData.indexOf(category);
+            category.isActive = category.isActive == 1 ? 0 : 1;
+            _this.categoryData[idx] = category;
         });
     };
     ;

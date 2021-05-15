@@ -21,7 +21,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.GetAllSubCategoryDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_GetAllSubCategoryDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     var response = new List<SubCategory>();
@@ -43,7 +43,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.SelectSubCategory", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_SelectSubCategory", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@pId", id));
@@ -66,7 +66,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.GetSubCategoryDetails", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_GetSubCategoryDetails", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -89,7 +89,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.CreateSubCategory", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_CreateSubCategory", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", -1));
@@ -106,7 +106,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.UpdateSubCategory", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_UpdateSubCategory", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -122,7 +122,7 @@ namespace GeoFence.ClientApp.Data
         {
             using (SqlConnection sql = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("da.DeleteSubCategory", sql))
+                using (SqlCommand cmd = new SqlCommand("da.eats_DeleteSubCategory", sql))
                 {
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.Add(new SqlParameter("@Id", id));
@@ -139,7 +139,8 @@ namespace GeoFence.ClientApp.Data
             {
                 SubCategoryId = Common.NullableInt("SubCategoryId", reader),
                 SubCategoryName = (string)reader["SubCategoryName"],
-                IsDeleted = Common.NullableInt("IsDeleted", reader),
+                CategoryName = (string)reader["CategoryName"],
+                IsActive = Common.NullableInt("IsActive", reader),
                 CategoryId = Common.NullableInt("CategoryId", reader)
             };
         }

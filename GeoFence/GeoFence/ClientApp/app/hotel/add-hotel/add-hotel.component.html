@@ -2,8 +2,6 @@
 <div class="col-md-11 user-container" style="margin-top:1%; margin-bottom:1%;margin-left:4%;border:2px solid">
     <h2 class="text-center" style="margin-top:1%">Add Hotel<button class="btn btn-info" style="float:right" (click)="backToList()">Back to list</button></h2>
     <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
-        <p>Form value: {{ addForm.value | json }}</p>
-        <p>Form status: {{ addForm.status | json }}</p>
         <div class="form-group" style="width:48%;float:left">
             <label for="hotel_Name">Hotel Name:</label>
             <input required type="text" formControlName="hotel_Name" placeholder="Hotel Name" name="hotel_Name" class="form-control" id="hotel_Name">
@@ -58,7 +56,6 @@
             <label for="hotelType">Hotel Type:</label>
             <input required type="text" formControlName="hotelType" placeholder="Hotel Type" name="hotelType" class="form-control" id="hotelType">
         </div>
-
         <div class="form-group" style="width:48%;float:right">
             <label for="safetyCertificateNumber">Safety Certificate Number:</label>
             <input required type="text" formControlName="safetyCertificateNumber" placeholder="Safety Certificate Number" name="safetyCertificateNumber" class="form-control" id="safetyCertificateNumber">
@@ -93,10 +90,14 @@
             <label for="gST">GST:</label>
             <input required type="text" formControlName="gST" placeholder="GST" name="gST" class="form-control" id="gST">
         </div>
-
         <div class="form-group" style="width:48%;float:left">
-            <label for="workingDays">WorkingDays:</label>
-            <input required type="text" formControlName="workingDays" placeholder="WorkingDays" name="workingDays" class="form-control" id="workingDays">
+            <label for="workingDays">WorkingDays:</label><br />
+            <div *ngFor="let day of DaysArray; let i=index" style="float:left;margin-left:15px">
+                <label>
+                    <input type="checkbox" id="{{day.value}}"  [value]="day.value" (change)="onCheckboxChange($event)" />
+                    {{day.name}}
+                </label>
+            </div>
         </div>
 
         <div class="form-group" style="width:48%;float:right">
@@ -133,7 +134,7 @@
             <input required type="text" formControlName="image" placeholder="IsOutdoorAvailable" name="image" class="form-control" id="image" hidden>
             <input type="file" (change)="fileChangeEvent($event)" class="fileInputProfile">
             <span *ngFor="let n of cardImageBase64arr">
-                <button>*</button>
+                <button title="Remove Image" style="background-color:red;font-size:medium;font-weight:bold;color:white; border-radius:50%" type="button" (click)="DeleteImage(n)">X</button>
                 <img [src]="n" style="height:128px;width:128px;cursor:pointer;margin-left:5px" (click)="ImageClick(n)" />
             </span>
         </div>

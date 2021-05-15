@@ -17,6 +17,9 @@ var SubcategoryService = /** @class */ (function () {
         this.Http = http;
         this.BaseURL = baseUrl;
     }
+    SubcategoryService.prototype.GetCategoryDorpdown = function () {
+        return this.Http.get(this.BaseURL + 'api/Data/GetCategoriesForDropDown');
+    };
     SubcategoryService.prototype.GetAllSubCategories = function () {
         return this.Http.get(this.BaseURL + 'api/Data/GetAllSubCategories');
     };

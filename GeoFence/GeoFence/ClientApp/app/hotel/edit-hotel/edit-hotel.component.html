@@ -96,8 +96,13 @@
         </div>
 
         <div class="form-group" style="width:48%;float:left">
-            <label for="workingDays">WorkingDays:</label>
-            <input required type="text" formControlName="workingDays" placeholder="WorkingDays" name="workingDays" class="form-control" id="workingDays">
+            <label for="workingDays">WorkingDays:</label><br />
+            <div *ngFor="let day of DaysArray; let i=index" style="float:left;margin-left:15px">
+                <label>
+                    <input type="checkbox" id="{{day.value}}" [checked]="isChecked(day.value)" [value]="day.value" (change)="onCheckboxChange($event)" />
+                    {{day.name}}
+                </label>
+            </div>
         </div>
 
         <div class="form-group" style="width:48%;float:right">
@@ -127,6 +132,15 @@
         <div class="form-group" style="width:48%;float:left">
             <label for="isOutdoorAvailable">IsOutdoorAvailable:</label>
             <input required type="text" formControlName="isOutdoorAvailable" placeholder="IsOutdoorAvailable" name="isOutdoorAvailable" class="form-control" id="isOutdoorAvailable">
+        </div>
+        <div class="form-group" style="width:100%;float:left;border:solid 1px black;height:138px;vertical-align:middle">
+            <label for="image">Image:</label>
+            <input required type="text" formControlName="image" placeholder="IsOutdoorAvailable" name="image" class="form-control" id="image" hidden>
+            <input type="file" (change)="fileChangeEvent($event)" class="fileInputProfile">
+            <span *ngFor="let n of cardImageBase64arr">
+                <button title="Remove Image" style="background-color:red;font-size:medium;font-weight:bold;color:white; border-radius:50%" type="button" (click)="DeleteImage(n)">X</button>
+                <img [src]="n" style="height:128px;width:128px;cursor:pointer;margin-left:5px" (click)="ImageClick(n)" />
+            </span>
         </div>
         <button class="btn btn-success" style="width:10%; margin-left:46%;margin-top:2%;margin-bottom:2%">Update</button>
     </form>

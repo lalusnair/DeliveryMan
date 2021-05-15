@@ -11,11 +11,14 @@ import { Component } from '@angular/core';
 import { FormBuilder } from "@angular/forms";
 import { Router } from "@angular/router";
 import { ItemService } from 'ClientApp/Services/item.service';
+import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
 var ViewItemComponent = /** @class */ (function () {
-    function ViewItemComponent(formBuilder, router, apiService) {
+    function ViewItemComponent(formBuilder, router, func, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
+        this.func = func;
         this.apiService = apiService;
+        this.cardImageBase64arr = [];
     }
     ViewItemComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -31,7 +34,7 @@ var ViewItemComponent = /** @class */ (function () {
             image: [],
             hotel_Name: [],
             categoryName: [],
-            isdeleted: [],
+            isActive: [],
             subCategoryName: [],
             itemName: [],
             categoryId: [],
@@ -44,11 +47,15 @@ var ViewItemComponent = /** @class */ (function () {
         });
         this.apiService.GetItemById(parseInt(itemId))
             .subscribe(function (data) {
+            _this.cardImageBase64arr = data.image != null ? data.image.split('^') : [];
             _this.editForm.setValue(data);
         });
     };
     ViewItemComponent.prototype.backToList = function () {
         this.router.navigate(['ListItem']);
+    };
+    ViewItemComponent.prototype.ImageClick = function (image64) {
+        this.func.openImageInNewWindow(image64);
     };
     ViewItemComponent = __decorate([
         Component({
@@ -56,7 +63,10 @@ var ViewItemComponent = /** @class */ (function () {
             templateUrl: './view-item.component.html',
             styleUrls: ['./view-item.component.css']
         }),
-        __metadata("design:paramtypes", [FormBuilder, Router, ItemService])
+        __metadata("design:paramtypes", [FormBuilder,
+            Router,
+            FuncServiceService,
+            ItemService])
     ], ViewItemComponent);
     return ViewItemComponent;
 }());

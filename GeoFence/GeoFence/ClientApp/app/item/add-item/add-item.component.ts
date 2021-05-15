@@ -7,6 +7,7 @@ import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
 import { SubCategoryDropDown } from 'ClientApp/app/DTOs/SubCategory_DTO';
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
+import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
 
 @Component({
     selector: 'app-add-item',
@@ -19,6 +20,7 @@ export class AddItemComponent implements OnInit {
 
     constructor(private formBuilder: FormBuilder,
         private router: Router,
+        private func: FuncServiceService,
         private apiService: ItemService) { }
 
 
@@ -64,6 +66,15 @@ export class AddItemComponent implements OnInit {
     }
     backToList() {
         this.router.navigate(['ListItem']);
+    }
+
+    DeleteImage(image: string) {
+        this.cardImageBase64arr.splice(this.cardImageBase64arr.indexOf(image), 1);
+        var imageToDB = '';
+        for (var i = 0; i < this.cardImageBase64arr.length; i++) {
+            imageToDB = imageToDB + '^' + this.cardImageBase64arr[i];
+        }
+        this.addForm.controls['image'].setValue(imageToDB);
     }
 
     changeSubCategory(e) {

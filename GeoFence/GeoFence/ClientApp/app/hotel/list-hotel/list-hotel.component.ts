@@ -21,6 +21,7 @@ export class ListHotelComponent implements OnInit {
     ngOnInit() {
         this._hotelServ.GetAllHotels().subscribe(res => {
             this.hotelData = res;
+            console.log(this.hotelData);
         });
     }
 
@@ -29,9 +30,10 @@ export class ListHotelComponent implements OnInit {
     };
 
     deleteHotel(hotel: HotelDetailsDTO): void {
-        console.log(hotel);
         this._hotelServ.DeleteHotel(hotel.hotel_Id).subscribe(res => {
-            this.hotelData = this.hotelData.filter(u => u !== hotel);
+            var idx = this.hotelData.indexOf(hotel);
+            hotel.isActive = hotel.isActive == 1 ? 0 : 1;
+            this.hotelData[idx] = hotel;
         });
     };
 

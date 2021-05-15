@@ -25,11 +25,15 @@ var EditSubcategoryComponent = /** @class */ (function () {
             this.router.navigate(['ListSubCategory']);
             return;
         }
+        this.apiService.GetCategoryDorpdown().subscribe(function (res) {
+            _this.Categories = res;
+        });
         this.editForm = this.formBuilder.group({
             subCategoryId: [],
             categoryId: ['', Validators.required],
+            categoryName: [],
             subCategoryName: ['', Validators.required],
-            isDeleted: []
+            isActive: []
         });
         this.apiService.GetSubCategoryById(parseInt(subCategoryID))
             .subscribe(function (data) {

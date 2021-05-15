@@ -1,7 +1,7 @@
 ﻿export class CategoryDetailsDTO {
     categoryId: number;
     categoryName: string;
-    isDeleted: number;
+    isActive: number;
 }
 export class CategoryDropDown {
     categoryId: number;

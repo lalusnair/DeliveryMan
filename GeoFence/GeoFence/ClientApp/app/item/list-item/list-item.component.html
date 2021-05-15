@@ -8,10 +8,7 @@
                 <th>ItemName</th>
                 <th>CategoryName</th>
                 <th>SubCategoryName</th>
-                <th>SellingPrice</th>
-                <th>OurPrice</th>
-                <th>Preparationtime</th>
-                <th>ItemAvailableTime</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -21,14 +18,11 @@
                 <td>{{item.itemName}}</td>
                 <td>{{item.categoryName}}</td>
                 <td>{{item.subCategoryName}}</td>
-                <td>{{item.sellingPrice}}</td>
-                <td>{{item.ourPrice}}</td>
-                <td>{{item.preparationtime}}</td>
-                <td>{{item.itemAvailableTime}}</td>
+                <td>{{item.isActive | actInact}}</td>
                 <td style="text-align:center">
                     <button class="btn btn-primary" (click)="viewItem(item)"> View</button>
                     <button class="btn btn-success" (click)="editItem(item)" style="margin-left: 20px;"> Edit</button>
-                    <button class="btn btn-danger" (click)="deleteItem(item)" style="margin-left: 20px;"> Delete</button>
+                    <button class="btn btn-primary" (click)="deleteItem(item)" style="margin-left: 20px;"> Activate/Inactivate</button>
                 </td>
             </tr>
         </tbody>

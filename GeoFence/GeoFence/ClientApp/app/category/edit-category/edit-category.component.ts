@@ -25,7 +25,7 @@ export class EditCategoryComponent implements OnInit {
         this.editForm = this.formBuilder.group({
             categoryId: [],
             categoryName: ['', Validators.required],
-            isDeleted: []
+            isActive: []
         });
 
         this.apiService.GetCategoryById(parseInt(categoryID))

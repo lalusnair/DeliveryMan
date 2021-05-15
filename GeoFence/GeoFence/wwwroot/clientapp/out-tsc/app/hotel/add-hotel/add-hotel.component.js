@@ -8,18 +8,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from "@angular/forms";
+import { FormBuilder, Validators, FormControl } from "@angular/forms";
 import { Router } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
+import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
 var AddHotelComponent = /** @class */ (function () {
-    function AddHotelComponent(formBuilder, router, sanitizer, apiService) {
+    function AddHotelComponent(formBuilder, router, func, sanitizer, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
+        this.func = func;
         this.sanitizer = sanitizer;
         this.apiService = apiService;
         this.cardImageBase64arr = [];
+        this.DaysArray = [{ name: 'Mon', value: 'Monday' },
+            { name: 'Tue', value: 'Tuesday' },
+            { name: 'Wed', value: 'Wednesday' },
+            { name: 'Thu', value: 'Thursday' },
+            { name: 'Fri', value: 'Friday' },
+            { name: 'Sat', value: 'Saturday' },
+            { name: 'Sun', value: 'Sunday' }];
     }
     AddHotelComponent.prototype.ngOnInit = function () {
         this.addForm = this.formBuilder.group({
@@ -49,7 +58,8 @@ var AddHotelComponent = /** @class */ (function () {
             hotelRating: [],
             isParkingAvailable: ['', Validators.required],
             isOutdoorAvailable: ['', Validators.required],
-            image: []
+            image: [],
+            checkArray: this.formBuilder.array([])
         });
     };
     AddHotelComponent.prototype.onSubmit = function () {
@@ -65,46 +75,41 @@ var AddHotelComponent = /** @class */ (function () {
             alert("detailsz");
         }
     };
+    AddHotelComponent.prototype.onCheckboxChange = function (e) {
+        var checkArray = this.addForm.get('checkArray');
+        if (e.target.checked) {
+            checkArray.push(new FormControl(e.target.value));
+        }
+        else {
+            var i_1 = 0;
+            checkArray.controls.forEach(function (item) {
+                if (item.value == e.target.value) {
+                    checkArray.removeAt(i_1);
+                    return;
+                }
+                i_1++;
+            });
+        }
+        var value = '';
+        checkArray.controls.forEach(function (item) {
+            value = value + item.value + ';';
+        });
+        value = value.substring(0, value.lastIndexOf(';'));
+        this.addForm.controls["workingDays"].setValue(value);
+    };
     AddHotelComponent.prototype.backToList = function () {
         this.router.navigate(['ListHotel']);
     };
-    AddHotelComponent.prototype.fileChangeEvent1 = function (fileInput) {
-        var _this = this;
-        if (fileInput.target.files && fileInput.target.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                console.log(e.target.result);
-                console.log(fileInput.target.files);
-                var blob = new Blob(fileInput.target.files, { type: fileInput.target.files[0].type });
-                var url = window.URL.createObjectURL(blob);
-                _this.selectedFileBLOB = _this.sanitizer.bypassSecurityTrustUrl(url);
-            };
-            reader.readAsDataURL(fileInput.target.files[0]);
+    AddHotelComponent.prototype.DeleteImage = function (image) {
+        this.cardImageBase64arr.splice(this.cardImageBase64arr.indexOf(image), 1);
+        var imageToDB = '';
+        for (var i = 0; i < this.cardImageBase64arr.length; i++) {
+            imageToDB = imageToDB + '^' + this.cardImageBase64arr[i];
         }
+        this.addForm.controls['image'].setValue(imageToDB);
     };
     AddHotelComponent.prototype.ImageClick = function (image64) {
-        var b64toBlob = function (b64Data, contentType, sliceSize) {
-            if (contentType === void 0) { contentType = ''; }
-            if (sliceSize === void 0) { sliceSize = 512; }
-            var byteCharacters = atob(b64Data);
-            var byteArrays = [];
-            for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
-                var slice = byteCharacters.slice(offset, offset + sliceSize);
-                var byteNumbers = new Array(slice.length);
-                for (var i = 0; i < slice.length; i++) {
-                    byteNumbers[i] = slice.charCodeAt(i);
-                }
-                var byteArray = new Uint8Array(byteNumbers);
-                byteArrays.push(byteArray);
-            }
-            var blob = new Blob(byteArrays, { type: contentType });
-            return blob;
-        };
-        var blob = b64toBlob(image64.split(',')[1], image64.split(',')[0].split(';')[0].split(':')[1]);
-        var blobUrl = URL.createObjectURL(blob);
-        //let url = window.URL.createObjectURL(blob);
-        //window.location.href = this.sanitizer.bypassSecurityTrustUrl(blobUrl);
-        window.open(blobUrl, '_blank');
+        this.func.openImageInNewWindow(image64);
     };
     AddHotelComponent.prototype.fileChangeEvent = function (fileInput) {
         var _this = this;
@@ -168,6 +173,7 @@ var AddHotelComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [FormBuilder,
             Router,
+            FuncServiceService,
             DomSanitizer,
             HotelService])
     ], AddHotelComponent);

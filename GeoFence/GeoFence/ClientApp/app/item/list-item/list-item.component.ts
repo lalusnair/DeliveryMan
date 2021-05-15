@@ -28,7 +28,9 @@ export class ListItemComponent implements OnInit {
 
     deleteItem(item: ItemDetailsDTO): void {
         this._itemService.DeleteItem(item.itemId).subscribe(res => {
-            this.itemData = this.itemData.filter(u => u !== item);
+            var idx = this.itemData.indexOf(item);
+            item.isActive = item.isActive == 1 ? 0 : 1;
+            this.itemData[idx] = item;
         });
     };
 
