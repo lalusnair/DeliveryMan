@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
+using System;
 
 namespace GeoFence
 {
@@ -33,7 +35,25 @@ namespace GeoFence
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Thean API",
+                    Description = "Thean Web API List",
+                    TermsOfService = new Uri("https://example.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Thean Team",
+                        Email = string.Empty,
+                        Url = new Uri("https://thean.in/spboyer"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "#STRICTLY FOR TEAM INTERNAL USE ONLY#",
+                        Url = new Uri("https://thean.com/license"),
+                    }
+                });
             });
 
             services.AddSpaStaticFiles(configuration =>
@@ -48,13 +68,21 @@ namespace GeoFence
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile(env.ContentRootPath + $"\\Logs\\Log-{System.DateTime.Now.ToString("ddd-MMMM-yyyy")}-HR-{System.DateTime.Now.ToString("HH")}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.  
+                app.UseHsts();
+            }
+            app.UseHttpsRedirection();
+            app.UseHsts();
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
@@ -81,6 +109,8 @@ namespace GeoFence
                 }
             });
             app.UseCors(options => options.AllowAnyOrigin());
+
+
         }
     }
 }

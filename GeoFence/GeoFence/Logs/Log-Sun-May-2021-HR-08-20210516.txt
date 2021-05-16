@@ -1,0 +1,129 @@
+2021-05-16T08:05:39.7161376+05:30  [INF] Starting @angular/cli on port 60229... (38fbe71c)
+2021-05-16T08:05:40.9296311+05:30 0HM8O2D5UQTT1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T08:05:40.9296301+05:30 0HM8O2D5UQTT2:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8840/  0 (ca22a1cb)
+2021-05-16T08:05:41.0116889+05:30 0HM8O2D5UQTT1:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2021-05-16T08:05:41.0347179+05:30 0HM8O2D5UQTT2:00000001 [INF] Request finished in 97.9751ms 200  (791a596a)
+2021-05-16T08:05:50.1866562+05:30  [ERR] (node:11164) [DEP0131] DeprecationWarning: The legacy HTTP parser is deprecated.
+ (a1e17a24)
+2021-05-16T08:05:50.3364686+05:30  [INF] > client-app@0.0.0 start C:\WorkSpace\DeliveryMan\GeoFence\GeoFence
+> ng serve "--port" "60229"
+
+** Angular Live Development Server is listening on localhost:60229, open your browser on http://localhost:60229/ **
+ (668e1a56)
+2021-05-16T08:06:09.4138288+05:30  [INF] i ∩╜ówdm∩╜ú: wait until bundle finished: /
+ (5b9bec14)
+2021-05-16T08:06:13.1087549+05:30  [INF] Date: 2021-05-16T02:36:13.104Z
+Hash: 8729d512071bde35c4c6
+Time: 22472ms
+chunk {main} main.js, main.js.map (main) 210 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 232 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 243 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.51 MB [initial] [rendered]
+
+ (e31c66cf)
+2021-05-16T08:06:13.1511313+05:30  [INF] WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (9a001bae)
+2021-05-16T08:06:13.3761015+05:30 0HM8O2D5UQTT1:00000001 [INF] Request finished in 32266.3998ms 304  (791a596a)
+2021-05-16T08:06:14.3432546+05:30 0HM8O2D5UQTT3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js   (ca22a1cb)
+2021-05-16T08:06:14.4148603+05:30 0HM8O2D5UQTT4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js   (ca22a1cb)
+2021-05-16T08:06:14.4617973+05:30 0HM8O2D5UQTT5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js   (ca22a1cb)
+2021-05-16T08:06:14.4878128+05:30 0HM8O2D5UQTT2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js   (ca22a1cb)
+2021-05-16T08:06:14.5017842+05:30 0HM8O2D5UQTT1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js   (ca22a1cb)
+2021-05-16T08:06:15.2645252+05:30 0HM8O2D5UQTT3:00000001 [INF] Request finished in 943.6371ms 304  (791a596a)
+2021-05-16T08:06:16.8588810+05:30 0HM8O2D5UQTT5:00000001 [INF] Request finished in 2397.2786ms 304  (791a596a)
+2021-05-16T08:06:16.8591756+05:30 0HM8O2D5UQTT1:00000002 [INF] Request finished in 2345.5789ms 304  (791a596a)
+2021-05-16T08:06:16.8746148+05:30 0HM8O2D5UQTT2:00000002 [INF] Request finished in 2377.9994ms 304  (791a596a)
+2021-05-16T08:06:17.0310787+05:30 0HM8O2D5UQTT4:00000001 [INF] Request finished in 2718.8466ms 304  (791a596a)
+2021-05-16T08:06:17.0522413+05:30 0HM8O2D5UQTT3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js.map   (ca22a1cb)
+2021-05-16T08:06:17.0639985+05:30 0HM8O2D5UQTT3:00000002 [INF] Request finished in 12.04ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:06:17.1198130+05:30 0HM8O2D5UQTT5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js.map   (ca22a1cb)
+2021-05-16T08:06:17.1290133+05:30 0HM8O2D5UQTT5:00000002 [INF] Request finished in 9.0749ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:06:17.7012012+05:30 0HM8O2D5UQTT1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js.map   (ca22a1cb)
+2021-05-16T08:06:17.7391026+05:30 0HM8O2D5UQTT1:00000003 [INF] Request finished in 212.0904ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:06:18.2815703+05:30 0HM8O2D5UQTT2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js.map   (ca22a1cb)
+2021-05-16T08:06:18.3315883+05:30 0HM8O2D5UQTT2:00000003 [INF] Request finished in 48.427ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:06:18.9157861+05:30 0HM8O2D5UQTT4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js.map   (ca22a1cb)
+2021-05-16T08:06:18.9263462+05:30 0HM8O2D5UQTT4:00000002 [INF] Request finished in 9.8402ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:06:21.7983279+05:30 0HM8O2D5UQTT3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/api/Data/GetAllSubCategories   (ca22a1cb)
+2021-05-16T08:06:21.8842597+05:30 0HM8O2D5UQTT5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/info?t=1621132581860   (ca22a1cb)
+2021-05-16T08:06:21.9121961+05:30 0HM8O2D5UQTT5:00000003 [INF] Request finished in 24.266ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:06:21.9592203+05:30 0HM8O2D5UQTT3:00000003 [INF] Route matched with "{action = \"GetAllSubCategories\", controller = \"Data\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[GeoFence.ClientApp.Models.SubCategory]] GetAllSubCategories()" on controller "GeoFence.Controllers.DataController" ("GeoFence"). (122b2fdf)
+2021-05-16T08:06:21.9999418+05:30 0HM8O2D5UQTT1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/183/oumdkivh/websocket   (ca22a1cb)
+2021-05-16T08:06:22.0149454+05:30 0HM8O2D5UQTT3:00000003 [INF] Executing action method "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)" - Validation state: Valid (dad538d7)
+2021-05-16T08:06:25.6019303+05:30 0HM8O2D5UQTT3:00000003 [INF] Log message in the Index() method (d2c930e3)
+2021-05-16T08:06:25.6535848+05:30 0HM8O2D5UQTT2:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/183/hana25bc/xhr_streaming?t=1621132585580  0 (ca22a1cb)
+2021-05-16T08:06:26.4520809+05:30 0HM8O2D5UQTT3:00000003 [INF] Executed action method "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4429.7552ms. (50a9e262)
+2021-05-16T08:06:26.4695752+05:30 0HM8O2D5UQTT3:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[GeoFence.ClientApp.Models.SubCategory, GeoFence, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2021-05-16T08:06:26.8688993+05:30 0HM8O2D5UQTT3:00000003 [INF] Executed action "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)" in 4899.581ms (afa2e885)
+2021-05-16T08:06:26.8760435+05:30 0HM8O2D5UQTT3:00000003 [INF] Request finished in 5099.1081ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-16T08:06:27.7433483+05:30 0HM8O2D5UQTT1:00000004 [INF] Request finished in 5750.3676ms 101  (791a596a)
+2021-05-16T08:41:54.3257717+05:30  [INF] Starting @angular/cli on port 61855... (d26218c5)
+2021-05-16T08:41:55.3988537+05:30 0HM8O31DV7RKO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T08:41:55.3988536+05:30 0HM8O31DV7RKN:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8840/  0 (ca22a1cb)
+2021-05-16T08:41:55.6724723+05:30 0HM8O31DV7RKO:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2021-05-16T08:41:55.6726648+05:30 0HM8O31DV7RKN:00000001 [INF] Request finished in 278.393ms 200  (791a596a)
+2021-05-16T08:42:08.5517119+05:30  [ERR] (node:6112) [DEP0131] DeprecationWarning: The legacy HTTP parser is deprecated.
+ (d6aa58e9)
+2021-05-16T08:42:08.7453603+05:30  [INF] > client-app@0.0.0 start C:\WorkSpace\DeliveryMan\GeoFence\GeoFence
+> ng serve "--port" "61855"
+
+** Angular Live Development Server is listening on localhost:61855, open your browser on http://localhost:61855/ **
+ (61ec7be1)
+2021-05-16T08:42:29.1977550+05:30  [INF] i ∩╜ówdm∩╜ú: wait until bundle finished: /
+ (5b9bec14)
+2021-05-16T08:42:33.8336349+05:30  [INF] Date: 2021-05-16T03:12:33.829Z
+Hash: 8729d512071bde35c4c6
+Time: 24684ms
+chunk {main} main.js, main.js.map (main) 210 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 232 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 243 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.51 MB [initial] [rendered]
+
+ (8f2d4efa)
+2021-05-16T08:42:33.8955582+05:30  [INF] WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (9a001bae)
+2021-05-16T08:42:34.0702138+05:30 0HM8O31DV7RKO:00000001 [INF] Request finished in 38552.5441ms 304  (791a596a)
+2021-05-16T08:42:34.6821743+05:30 0HM8O31DV7RKP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js   (ca22a1cb)
+2021-05-16T08:42:34.6927375+05:30 0HM8O31DV7RKQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js   (ca22a1cb)
+2021-05-16T08:42:34.7134218+05:30 0HM8O31DV7RKR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js   (ca22a1cb)
+2021-05-16T08:42:34.7264152+05:30 0HM8O31DV7RKN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js   (ca22a1cb)
+2021-05-16T08:42:34.7285069+05:30 0HM8O31DV7RKO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js   (ca22a1cb)
+2021-05-16T08:42:34.7651950+05:30 0HM8O31DV7RKP:00000001 [INF] Request finished in 84.5571ms 304  (791a596a)
+2021-05-16T08:42:36.9306583+05:30 0HM8O31DV7RKQ:00000001 [INF] Request finished in 2222.8523ms 304  (791a596a)
+2021-05-16T08:42:36.9365689+05:30 0HM8O31DV7RKN:00000002 [INF] Request finished in 2204.7875ms 304  (791a596a)
+2021-05-16T08:42:37.4732632+05:30 0HM8O31DV7RKR:00000001 [INF] Request finished in 2744.5527ms 304  (791a596a)
+2021-05-16T08:42:37.4734407+05:30 0HM8O31DV7RKO:00000002 [INF] Request finished in 2724.9396ms 304  (791a596a)
+2021-05-16T08:42:37.4948118+05:30 0HM8O31DV7RKP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js.map   (ca22a1cb)
+2021-05-16T08:42:37.5118781+05:30 0HM8O31DV7RKP:00000002 [INF] Request finished in 17.2139ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:42:37.5708864+05:30 0HM8O31DV7RKQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js.map   (ca22a1cb)
+2021-05-16T08:42:37.5988358+05:30 0HM8O31DV7RKQ:00000002 [INF] Request finished in 27.5463ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:42:38.1460754+05:30 0HM8O31DV7RKN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js.map   (ca22a1cb)
+2021-05-16T08:42:38.1958249+05:30 0HM8O31DV7RKN:00000003 [INF] Request finished in 69.9849ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:42:38.6183659+05:30 0HM8O31DV7RKR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js.map   (ca22a1cb)
+2021-05-16T08:42:38.6929526+05:30 0HM8O31DV7RKR:00000002 [INF] Request finished in 73.4245ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:42:39.2393163+05:30 0HM8O31DV7RKO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js.map   (ca22a1cb)
+2021-05-16T08:42:39.2495582+05:30 0HM8O31DV7RKO:00000003 [INF] Request finished in 12.6702ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:42:41.7617078+05:30 0HM8O31DV7RKP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/api/Data/GetAllSubCategories   (ca22a1cb)
+2021-05-16T08:42:41.9579691+05:30 0HM8O31DV7RKP:00000003 [INF] Route matched with "{action = \"GetAllSubCategories\", controller = \"Data\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[GeoFence.ClientApp.Models.SubCategory]] GetAllSubCategories()" on controller "GeoFence.Controllers.DataController" ("GeoFence"). (122b2fdf)
+2021-05-16T08:42:42.0258420+05:30 0HM8O31DV7RKQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/info?t=1621134761860   (ca22a1cb)
+2021-05-16T08:42:42.0589106+05:30 0HM8O31DV7RKP:00000003 [INF] Executing action method "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)" - Validation state: Valid (dad538d7)
+2021-05-16T08:42:42.0625576+05:30 0HM8O31DV7RKQ:00000003 [INF] Request finished in 93.2297ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T08:42:42.1157223+05:30 0HM8O31DV7RKN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/213/2mbraii3/websocket   (ca22a1cb)
+2021-05-16T08:42:43.2198660+05:30 0HM8O31DV7RKP:00000003 [INF] Executed action method "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1153.6495ms. (50a9e262)
+2021-05-16T08:42:43.2371913+05:30 0HM8O31DV7RKP:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[GeoFence.ClientApp.Models.SubCategory, GeoFence, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2021-05-16T08:42:43.5045899+05:30 0HM8O31DV7RKP:00000003 [INF] Executed action "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)" in 1538.7878ms (afa2e885)
+2021-05-16T08:42:43.5104635+05:30 0HM8O31DV7RKP:00000003 [INF] Request finished in 1747.6945ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-16T08:42:43.9556523+05:30 0HM8O31DV7RKR:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/213/wys23w4a/xhr_streaming?t=1621134763860  0 (ca22a1cb)
+2021-05-16T08:42:44.2867987+05:30 0HM8O31DV7RKN:00000004 [INF] Request finished in 2172.8729ms 101  (791a596a)

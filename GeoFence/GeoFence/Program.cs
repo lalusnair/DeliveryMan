@@ -20,7 +20,20 @@ namespace GeoFence
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration(SetupConfiguration)
-                .UseStartup<Startup>();
+            .UseKestrel()
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseIISIntegration()
+            .UseStartup<Startup>()
+           // .UseHttpSys()            
+            .ConfigureLogging(logBuilder =>
+            {
+                logBuilder.ClearProviders(); // removes all providers from LoggerFactory
+                                             //  logBuilder.AddConsole();
+                logBuilder.AddTraceSource("Information, ActivityTracing");
+                logBuilder.AddDebug();
+                logBuilder.AddEventSourceLogger();
+
+            });
 
         private static void SetupConfiguration(WebHostBuilderContext ctx, IConfigurationBuilder builder)
         {
