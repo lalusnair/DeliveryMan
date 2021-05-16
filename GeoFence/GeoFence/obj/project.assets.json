@@ -12489,23 +12489,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aru\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aru\\Desktop\\DeliveryMan\\GeoFence\\GeoFence\\GeoFence.csproj",
+      "projectUniqueName": "C:\\WorkSpace\\DeliveryMan\\GeoFence\\GeoFence\\GeoFence.csproj",
       "projectName": "GeoFence",
-      "projectPath": "C:\\Users\\Aru\\Desktop\\DeliveryMan\\GeoFence\\GeoFence\\GeoFence.csproj",
-      "packagesPath": "C:\\Users\\Aru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aru\\Desktop\\DeliveryMan\\GeoFence\\GeoFence\\obj\\",
+      "projectPath": "C:\\WorkSpace\\DeliveryMan\\GeoFence\\GeoFence\\GeoFence.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\WorkSpace\\DeliveryMan\\GeoFence\\GeoFence\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Aru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12517,6 +12513,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {}
         }
       },
@@ -12528,6 +12525,7 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
@@ -12544,12 +12542,13 @@
             "version": "[5.0.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
           },
           "Microsoft.TypeScript.MSBuild": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[4.2.4, )"
@@ -12580,10 +12579,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

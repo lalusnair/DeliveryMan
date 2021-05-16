@@ -23,6 +23,7 @@
               "ClientApp/assets"
             ],
             "styles": [
+              "node_modules/ngx-toastr/toastr.css",
               "ClientApp/styles.css"
             ],
             "scripts": []
@@ -50,11 +51,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ClientApp:build"
+            "browserTarget": "ClientApp:build",
+            "progress": true
           },
           "configurations": {
             "production": {
-              "browserTarget": "ClientApp:build:production"
+              "browserTarget": "ClientApp:build:production",
+              "progress": true
             }
           }
         },
