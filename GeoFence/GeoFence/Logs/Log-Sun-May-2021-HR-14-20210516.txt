@@ -1,0 +1,1217 @@
+2021-05-16T14:00:25.0037434+05:30  [INF] Starting @angular/cli on port 56973... (e052e303)
+2021-05-16T14:00:28.7361293+05:30 0HM8O8JDSADR7:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8840/  0 (ca22a1cb)
+2021-05-16T14:00:28.7361293+05:30 0HM8O8JDSADR6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T14:00:29.3912995+05:30 0HM8O8JDSADR6:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2021-05-16T14:00:29.3913309+05:30 0HM8O8JDSADR7:00000001 [INF] Request finished in 892.7078ms 200  (791a596a)
+2021-05-16T14:00:39.6664262+05:30  [INF] > client-app@0.0.0 start C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence
+> ng serve "--port" "56973"
+
+** Angular Live Development Server is listening on localhost:56973, open your browser on http://localhost:56973/ **
+ (e7571835)
+2021-05-16T14:00:52.2850830+05:30 0HM8O8JDSADR7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T14:00:53.7664616+05:30  [INF] i ∩╜ówdm∩╜ú: wait until bundle finished: /
+ (5b9bec14)
+2021-05-16T14:00:56.1376713+05:30  [INF] i ∩╜ówdm∩╜ú: wait until bundle finished: /
+ (5b9bec14)
+2021-05-16T14:01:02.6442790+05:30  [INF] Date: 2021-05-16T08:31:02.640Z
+Hash: 55485b4646a58ae6a82f
+Time: 22680ms
+chunk {main} main.js, main.js.map (main) 218 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 232 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 252 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+ (1cd98ca0)
+2021-05-16T14:01:02.7104392+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (366c4f2e)
+2021-05-16T14:01:02.9700430+05:30 0HM8O8JDSADR6:00000001 [INF] Request finished in 34371.9285ms 200 text/html; charset=UTF-8 (791a596a)
+2021-05-16T14:01:02.9700393+05:30 0HM8O8JDSADR7:00000002 [INF] Request finished in 10475.1108ms 200 text/html; charset=UTF-8 (791a596a)
+2021-05-16T14:01:03.0387468+05:30 0HM8O8JDSADR8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js   (ca22a1cb)
+2021-05-16T14:01:03.0538657+05:30 0HM8O8JDSADR9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js   (ca22a1cb)
+2021-05-16T14:01:03.0620778+05:30 0HM8O8JDSADRA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js   (ca22a1cb)
+2021-05-16T14:01:03.0738753+05:30 0HM8O8JDSADR7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js   (ca22a1cb)
+2021-05-16T14:01:03.1547523+05:30 0HM8O8JDSADR6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js   (ca22a1cb)
+2021-05-16T14:01:04.0603359+05:30 0HM8O8JDSADR9:00000001 [INF] Request finished in 373.1278ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:01:04.1714913+05:30 0HM8O8JDSADR8:00000001 [INF] Request finished in 1159.6376ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:01:06.0614606+05:30 0HM8O8JDSADR7:00000003 [INF] Request finished in 2927.7035ms 304  (791a596a)
+2021-05-16T14:01:06.0994260+05:30 0HM8O8JDSADR6:00000002 [INF] Request finished in 2912.9447ms 304  (791a596a)
+2021-05-16T14:01:06.1352928+05:30 0HM8O8JDSADRA:00000001 [INF] Request finished in 3045.1563ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:01:06.7936451+05:30 0HM8O8JDSADR9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/info?t=1621153866779   (ca22a1cb)
+2021-05-16T14:01:06.9394070+05:30 0HM8O8JDSADR9:00000002 [INF] Request finished in 17.1004ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:01:07.1041495+05:30 0HM8O8JDSADR7:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/221/2zqmpms5/websocket   (ca22a1cb)
+2021-05-16T14:01:07.6187159+05:30 0HM8O8JDSADR6:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/221/cl1i0htz/xhr_streaming?t=1621153867605  0 (ca22a1cb)
+2021-05-16T14:01:08.3688896+05:30 0HM8O8JDSADRA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/221/5xqrgiep/eventsource   (ca22a1cb)
+2021-05-16T14:01:09.8884185+05:30 0HM8O8JDSADR7:00000004 [INF] Request finished in 2918.5921ms 101  (791a596a)
+2021-05-16T14:01:31.9556279+05:30 0HM8O8JDSADR8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T14:01:32.7514623+05:30 0HM8O8JDSADR6:00000003 [INF] Request finished in 25128.723ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:01:34.0120660+05:30 0HM8O8JDSADR8:00000002 [INF] Request finished in 2056.6163ms 304  (791a596a)
+2021-05-16T14:01:34.0842255+05:30 0HM8O8JDSADR8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js   (ca22a1cb)
+2021-05-16T14:01:34.0932394+05:30 0HM8O8JDSADR9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js   (ca22a1cb)
+2021-05-16T14:01:34.0961036+05:30 0HM8O8JDSADR8:00000003 [INF] Request finished in 26.1007ms 304  (791a596a)
+2021-05-16T14:01:34.1028126+05:30 0HM8O8JDSADRB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js   (ca22a1cb)
+2021-05-16T14:01:34.1164038+05:30 0HM8O8JDSADRC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js   (ca22a1cb)
+2021-05-16T14:01:34.1194206+05:30 0HM8O8JDSADR9:00000003 [INF] Request finished in 36.7345ms 304  (791a596a)
+2021-05-16T14:01:34.1196175+05:30 0HM8O8JDSADRB:00000001 [INF] Request finished in 12.7407ms 304  (791a596a)
+2021-05-16T14:01:34.1696211+05:30 0HM8O8JDSADRD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js   (ca22a1cb)
+2021-05-16T14:01:34.1977465+05:30 0HM8O8JDSADRC:00000001 [INF] Request finished in 58.7969ms 304  (791a596a)
+2021-05-16T14:01:34.2142245+05:30 0HM8O8JDSADRD:00000001 [INF] Request finished in 76.5979ms 304  (791a596a)
+2021-05-16T14:01:34.5364194+05:30 0HM8O8JDSADRB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/info?t=1621153894483   (ca22a1cb)
+2021-05-16T14:01:34.5768477+05:30 0HM8O8JDSADR8:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8840/favicon.ico   (ca22a1cb)
+2021-05-16T14:01:34.5845728+05:30 0HM8O8JDSADRB:00000002 [INF] Request finished in 16.7557ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:01:34.8328381+05:30 0HM8O8JDSADR8:00000004 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\wwwroot\clientapp\dist\favicon.ico"' (27b0a520)
+2021-05-16T14:01:34.8342681+05:30 0HM8O8JDSADRC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/045/yrcdckkh/websocket   (ca22a1cb)
+2021-05-16T14:01:34.8365366+05:30 0HM8O8JDSADR8:00000004 [INF] Request finished in 304.9443ms 200 image/x-icon (791a596a)
+2021-05-16T14:01:35.3611057+05:30 0HM8O8JDSADR9:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/5sm1imdx/xhr_streaming?t=1621153895347  0 (ca22a1cb)
+2021-05-16T14:01:36.2249317+05:30 0HM8O8JDSADRD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/045/yn2cemqd/eventsource   (ca22a1cb)
+2021-05-16T14:01:37.0684628+05:30 0HM8O8JDSADRB:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/__webpack_dev_server__/sockjs.bundle.js   (ca22a1cb)
+2021-05-16T14:01:37.3830095+05:30 0HM8O8JDSADRC:00000002 [INF] Request finished in 2514.1598ms 101  (791a596a)
+2021-05-16T14:01:37.8339013+05:30 0HM8O8JDSADRE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js.map   (ca22a1cb)
+2021-05-16T14:01:37.8557107+05:30 0HM8O8JDSADRG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js.map   (ca22a1cb)
+2021-05-16T14:01:37.8646375+05:30 0HM8O8JDSADRF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js.map   (ca22a1cb)
+2021-05-16T14:01:37.8911217+05:30 0HM8O8JDSADRH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js.map   (ca22a1cb)
+2021-05-16T14:01:37.9218566+05:30 0HM8O8JDSADR8:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js.map   (ca22a1cb)
+2021-05-16T14:01:38.1434023+05:30 0HM8O8JDSADRI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/045/40yie3ry/htmlfile?c=_jp.afaghfr   (ca22a1cb)
+2021-05-16T14:01:39.0291442+05:30 0HM8O8JDSADRD:00000002 [INF] Request finished in 2728.2229ms 200 text/event-stream (791a596a)
+2021-05-16T14:01:39.0537466+05:30 0HM8O8JDSADRJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/__webpack_dev_server__/sockjs.bundle.js   (ca22a1cb)
+2021-05-16T14:01:39.7035950+05:30 0HM8O8JDSADRB:00000003 [INF] Request finished in 2626.5533ms 200 application/javascript (791a596a)
+2021-05-16T14:01:39.8390983+05:30  [WRN] Connection processing ended abnormally. (21e125cb)
+Microsoft.AspNetCore.Connections.ConnectionAbortedException: The connection was aborted
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2021-05-16T14:01:40.0716125+05:30 0HM8O8JDSADRK:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/ysxq0kvc/xhr?t=1621153900055  0 (ca22a1cb)
+2021-05-16T14:01:40.0777426+05:30 0HM8O8JDSADRK:00000001 [INF] Request finished in 5.3877ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:01:40.0950045+05:30 0HM8O8JDSADRK:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/ysxq0kvc/xhr?t=1621153900083  0 (ca22a1cb)
+2021-05-16T14:01:40.1037273+05:30 0HM8O8JDSADRK:00000002 [INF] Request finished in 5.0459ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:01:40.1623094+05:30 0HM8O8JDSADRK:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/ysxq0kvc/xhr?t=1621153900125  0 (ca22a1cb)
+2021-05-16T14:01:41.3920346+05:30 0HM8O8JDSADRF:00000001 [INF] Request finished in 2606.2413ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:01:42.2575726+05:30 0HM8O8JDSADRG:00000001 [INF] Request finished in 2641.6174ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:01:42.4578561+05:30 0HM8O8JDSADRH:00000001 [INF] Request finished in 2686.4356ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:01:42.4651918+05:30 0HM8O8JDSADR8:00000005 [INF] Request finished in 2717.0302ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:01:42.4730557+05:30 0HM8O8JDSADRI:00000001 [INF] Request finished in 4341.5801ms 200 text/html; charset=UTF-8 (791a596a)
+2021-05-16T14:01:42.5074521+05:30 0HM8O8JDSADRJ:00000001 [INF] Request finished in 3439.394ms 200 application/javascript (791a596a)
+2021-05-16T14:01:42.5799215+05:30 0HM8O8JDSADRE:00000001 [INF] Request finished in 4746.9203ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:01:58.4080347+05:30 0HM8O8JDSADRA:00000002 [INF] Request finished in 50037.8305ms 200 text/event-stream (791a596a)
+2021-05-16T14:02:00.4061647+05:30 0HM8O8JDSADR9:00000004 [INF] Request finished in 25039.7632ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:02:05.1891832+05:30 0HM8O8JDSADRK:00000003 [INF] Request finished in 25017.8293ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:02:05.2225417+05:30 0HM8O8JDSADRG:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/ysxq0kvc/xhr?t=1621153925210  0 (ca22a1cb)
+2021-05-16T14:02:30.2328774+05:30 0HM8O8JDSADRG:00000002 [INF] Request finished in 25007.7087ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:02:30.2766674+05:30 0HM8O8JDSADRF:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/ysxq0kvc/xhr?t=1621153950263  0 (ca22a1cb)
+2021-05-16T14:02:55.3072942+05:30 0HM8O8JDSADRF:00000002 [INF] Request finished in 25017.4577ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:02:55.3654790+05:30 0HM8O8JDSADRK:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/ysxq0kvc/xhr?t=1621153975323  0 (ca22a1cb)
+2021-05-16T14:03:18.3924719+05:30 0HM8O8JDSADRG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T14:03:20.4184717+05:30 0HM8O8JDSADRK:00000004 [INF] Request finished in 25042.118ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:03:20.4736335+05:30 0HM8O8JDSADRF:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:8840/sockjs-node/045/ysxq0kvc/xhr?t=1621154000439  0 (ca22a1cb)
+2021-05-16T14:03:20.8775549+05:30 0HM8O8JDSADRG:00000003 [INF] Request finished in 2487.1844ms 304  (791a596a)
+2021-05-16T14:03:21.3828867+05:30 0HM8O8JDSADRL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js   (ca22a1cb)
+2021-05-16T14:03:21.7459647+05:30 0HM8O8JDSADRM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js   (ca22a1cb)
+2021-05-16T14:03:21.7550856+05:30 0HM8O8JDSADRL:00000001 [INF] Request finished in 641.6405ms 304  (791a596a)
+2021-05-16T14:03:21.7591286+05:30 0HM8O8JDSADRM:00000001 [INF] Request finished in 599.2069ms 304  (791a596a)
+2021-05-16T14:03:21.7644722+05:30 0HM8O8JDSADRN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js   (ca22a1cb)
+2021-05-16T14:03:21.7791926+05:30 0HM8O8JDSADRK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js   (ca22a1cb)
+2021-05-16T14:03:21.7882985+05:30 0HM8O8JDSADRN:00000001 [INF] Request finished in 23.29ms 304  (791a596a)
+2021-05-16T14:03:21.8021184+05:30 0HM8O8JDSADRG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js   (ca22a1cb)
+2021-05-16T14:03:21.8077481+05:30 0HM8O8JDSADRK:00000005 [INF] Request finished in 31.5656ms 304  (791a596a)
+2021-05-16T14:03:21.8722666+05:30 0HM8O8JDSADRG:00000004 [INF] Request finished in 19.8033ms 304  (791a596a)
+2021-05-16T14:03:21.8987714+05:30 0HM8O8JDSADRK:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js.map   (ca22a1cb)
+2021-05-16T14:03:21.9486088+05:30 0HM8O8JDSADRK:00000006 [INF] Request finished in 47.8628ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:03:22.6814059+05:30 0HM8O8JDSADRM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js.map   (ca22a1cb)
+2021-05-16T14:03:22.7049344+05:30 0HM8O8JDSADRL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js.map   (ca22a1cb)
+2021-05-16T14:03:22.7209696+05:30 0HM8O8JDSADRN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js.map   (ca22a1cb)
+2021-05-16T14:03:22.7349377+05:30 0HM8O8JDSADRO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/favicon.ico   (ca22a1cb)
+2021-05-16T14:03:22.7405380+05:30 0HM8O8JDSADRG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js.map   (ca22a1cb)
+2021-05-16T14:03:22.7930561+05:30 0HM8O8JDSADRO:00000001 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\wwwroot\clientapp\dist\favicon.ico"' (27b0a520)
+2021-05-16T14:03:22.8025868+05:30 0HM8O8JDSADRK:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/info?t=1621154002477   (ca22a1cb)
+2021-05-16T14:03:22.8082309+05:30 0HM8O8JDSADRO:00000001 [INF] Request finished in 73.7679ms 200 image/x-icon (791a596a)
+2021-05-16T14:03:23.2999822+05:30 0HM8O8JDSADRM:00000002 [INF] Request finished in 783.7578ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:03:25.4804322+05:30 0HM8O8JDSADRN:00000002 [INF] Request finished in 2696.6506ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:03:25.5159991+05:30 0HM8O8JDSADRL:00000002 [INF] Request finished in 2754.1587ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:03:25.5357134+05:30 0HM8O8JDSADRK:00000007 [INF] Request finished in 2700.8282ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:03:25.5556858+05:30 0HM8O8JDSADRO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/448/wpnzaz4g/websocket   (ca22a1cb)
+2021-05-16T14:03:25.5587230+05:30 0HM8O8JDSADRG:00000005 [INF] Request finished in 2805.863ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T14:03:45.5364561+05:30 0HM8O8JDSADRF:00000003 [INF] Request finished in 25040.9201ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T14:16:44.3486759+05:30  [INF] i ∩╜ówdm∩╜ú: Compiling...
+ (f6e4d4cc)
+2021-05-16T14:16:55.5693884+05:30  [INF] Date: 2021-05-16T08:46:53.848Z - Hash: a05b9107c0780e994313 - Time: 10064ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.83 MB [initial] [rendered]
+
+ (c9b60833)
+2021-05-16T14:16:56.5026831+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (f68eb958)
+2021-05-16T14:17:38.5385849+05:30  [INF] i ∩╜ówdm∩╜ú: Compiling...
+ (f6e4d4cc)
+2021-05-16T14:17:45.7150391+05:30  [INF] Date: 2021-05-16T08:47:43.941Z - Hash: 2f194a807aa9695021ef - Time: 6115ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.82 MB [initial] [rendered]
+
+ (eddbb144)
+2021-05-16T14:17:45.7427254+05:30  [ERR] ERROR in ../node_modules/ansi-regex/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\ansi-regex\index.js'
+
+ (28688bac)
+2021-05-16T14:18:01.0989146+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+i ∩╜ówdm∩╜ú: Compiling...
+ (706de30a)
+2021-05-16T14:18:07.9516194+05:30  [ERR] ERROR in ../node_modules/ansi-regex/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\ansi-regex\index.js'
+ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+
+ (1e466207)
+2021-05-16T14:18:08.4772571+05:30  [INF] Date: 2021-05-16T08:48:06.789Z - Hash: a721e8b983d19802f65a - Time: 6193ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.76 MB [initial] [rendered]
+
+ (60695b41)
+2021-05-16T14:18:09.1754591+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (f68eb958)
+2021-05-16T14:18:33.1030328+05:30  [INF] i ∩╜ówdm∩╜ú: Compiling...
+ (f6e4d4cc)
+2021-05-16T14:18:41.4983576+05:30  [ERR] ERROR in ../node_modules/ansi-regex/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\ansi-regex\index.js'
+ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+ERROR in ../node_modules/html-entities/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\html-entities\index.js'
+
+ (d2ee8435)
+2021-05-16T14:18:42.3807621+05:30  [INF] Date: 2021-05-16T08:48:40.534Z - Hash: b96d6f5da81cc74653dd - Time: 7655ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.21 MB [initial] [rendered]
+
+ (9a72f474)
+2021-05-16T14:18:43.3524128+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+i ∩╜ówdm∩╜ú: Compiling...
+ (706de30a)
+2021-05-16T14:18:48.1163220+05:30  [INF] Date: 2021-05-16T08:48:47.428Z - Hash: b6d6837a3c26a7e859a8 - Time: 6483ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.2 MB [initial] [rendered]
+
+ (7a8d4dfc)
+2021-05-16T14:18:48.8398348+05:30  [ERR] ERROR in ../node_modules/ansi-regex/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\ansi-regex\index.js'
+ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+ERROR in ../node_modules/html-entities/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\html-entities\index.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+
+ (db1d2d91)
+2021-05-16T14:18:48.9569836+05:30 0HM8O8JDSADRO:00000002 [INF] Request finished in 922549.9913ms 101  (791a596a)
+2021-05-16T14:19:47.6233617+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+i ∩╜ówdm∩╜ú: Compiling...
+ (706de30a)
+2021-05-16T14:19:53.5312225+05:30  [ERR] ERROR in ../node_modules/ansi-regex/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\ansi-regex\index.js'
+ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+ERROR in ../node_modules/html-entities/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\html-entities\index.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/loglevel/lib/loglevel.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\loglevel\lib\loglevel.js'
+
+ (32915837)
+2021-05-16T14:19:53.7404626+05:30  [INF] Date: 2021-05-16T08:49:52.986Z - Hash: 1cede9b6f47982bfb515 - Time: 5968ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.2 MB [initial] [rendered]
+
+ (ed4e6b63)
+2021-05-16T14:19:54.5387250+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (f68eb958)
+2021-05-16T14:20:15.1664062+05:30  [INF] i ∩╜ówdm∩╜ú: Compiling...
+ (f6e4d4cc)
+2021-05-16T14:20:17.9665070+05:30  [ERR] ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+ERROR in ../node_modules/html-entities/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\html-entities\index.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/loglevel/lib/loglevel.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\loglevel\lib\loglevel.js'
+ERROR in ../node_modules/strip-ansi/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\strip-ansi\index.js'
+
+ (95533cce)
+2021-05-16T14:20:18.4852365+05:30  [INF] Date: 2021-05-16T08:50:16.846Z - Hash: e665fb5031fd2c410996 - Time: 2372ms
+4 unchanged chunks
+chunk {styles} styles.js, styles.js.map (styles) 238 kB [initial] [rendered]
+
+ (84c2c90b)
+2021-05-16T14:20:19.4111916+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+i ∩╜ówdm∩╜ú: Compiling...
+ (706de30a)
+2021-05-16T14:20:22.2611741+05:30  [ERR] ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+ERROR in ../node_modules/html-entities/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\html-entities\index.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/loglevel/lib/loglevel.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\loglevel\lib\loglevel.js'
+ERROR in ../node_modules/strip-ansi/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\strip-ansi\index.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+
+ (f22cd5ac)
+2021-05-16T14:20:22.7718641+05:30  [INF] Date: 2021-05-16T08:50:21.207Z - Hash: e665fb5031fd2c410996 - Time: 2674ms
+5 unchanged chunks
+
+ (3b561ab2)
+2021-05-16T14:20:23.2449011+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (f68eb958)
+2021-05-16T14:20:36.8833293+05:30  [INF] i ∩╜ówdm∩╜ú: Compiling...
+ (f6e4d4cc)
+2021-05-16T14:20:40.3949513+05:30  [ERR] ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+ERROR in ../node_modules/html-entities/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\html-entities\index.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/loglevel/lib/loglevel.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\loglevel\lib\loglevel.js'
+ERROR in ../node_modules/strip-ansi/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\strip-ansi\index.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+
+ (f22cd5ac)
+2021-05-16T14:20:40.9676672+05:30  [INF] Date: 2021-05-16T08:50:39.742Z - Hash: ddb2bca57da05174dd01 - Time: 4306ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.01 MB [initial] [rendered]
+
+ (1d31098b)
+2021-05-16T14:20:41.8021213+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (f68eb958)
+2021-05-16T14:20:59.3738986+05:30  [INF] i ∩╜ówdm∩╜ú: Compiling...
+ (f6e4d4cc)
+2021-05-16T14:21:03.6138803+05:30  [INF] Date: 2021-05-16T08:51:03.148Z - Hash: f808eb56aedf8b03443c - Time: 4340ms
+3 unchanged chunks
+chunk {main} main.js, main.js.map (main) 217 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.94 MB [initial] [rendered]
+
+ (8dfe8b4a)
+2021-05-16T14:21:03.8579290+05:30  [ERR] ERROR in ../node_modules/events/events.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\events\events.js'
+ERROR in ../node_modules/html-entities/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\html-entities\index.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/loglevel/lib/loglevel.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\loglevel\lib\loglevel.js'
+ERROR in ../node_modules/sockjs-client/dist/sockjs.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\sockjs-client\dist\sockjs.js'
+ERROR in ../node_modules/strip-ansi/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\strip-ansi\index.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+
+ (3790ee2b)
+2021-05-16T14:21:04.8964111+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+i ∩╜ówdm∩╜ú: Compiling...
+ (706de30a)
+2021-05-16T14:21:10.3742008+05:30  [INF] Date: 2021-05-16T08:51:09.656Z - Hash: 38590f96b75af4cda46d - Time: 5251ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.7 MB [initial] [rendered]
+
+ (94e3a56e)
+2021-05-16T14:21:11.0013594+05:30  [ERR] ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+ERROR in ../node_modules/webpack-dev-server/client?http://0.0.0.0:0
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack-dev-server\client\index.js'
+
+ (fcf6bd20)
+2021-05-16T14:21:11.4718574+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (f68eb958)
+2021-05-16T14:21:14.3283220+05:30  [INF] i ∩╜ówdm∩╜ú: Compiling...
+
+ (e7dc77fe)
+2021-05-16T14:21:15.1946543+05:30  [ERR] ERROR in ../node_modules/@angular/animations/fesm5/animations.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\animations.js'
+ERROR in ../node_modules/@angular/animations/fesm5/browser.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\browser.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+ERROR in ../node_modules/webpack-dev-server/client?http://0.0.0.0:0
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack-dev-server\client\index.js'
+
+ (622a99aa)
+2021-05-16T14:21:16.0064677+05:30  [INF] Date: 2021-05-16T08:51:13.615Z - Hash: 2524d6600e38c26c02b0 - Time: 3690ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.44 MB [initial] [rendered]
+
+ (fc568b81)
+2021-05-16T14:21:17.8954196+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+i ∩╜ówdm∩╜ú: Compiling...
+
+ (ca758bb3)
+2021-05-16T14:21:18.8708967+05:30  [ERR] ERROR in ../node_modules/@angular/animations/fesm5/animations.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\animations.js'
+ERROR in ../node_modules/@angular/animations/fesm5/browser.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\browser.js'
+ERROR in ../node_modules/@angular/common/fesm5/common.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\common\fesm5\common.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+ERROR in ../node_modules/webpack-dev-server/client?http://0.0.0.0:0
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack-dev-server\client\index.js'
+
+ (dfd5399b)
+2021-05-16T14:21:19.5514715+05:30  [INF] Date: 2021-05-16T08:51:16.974Z - Hash: 1c2722fc5034a8a9ac74 - Time: 3047ms
+4 unchanged chunks
+chunk {vendor} vendor.js, vendor.js.map (vendor) 2.25 MB [initial] [rendered]
+
+ (a350e623)
+2021-05-16T14:21:22.6415300+05:30  [INF] WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:121-129 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+243:25-43 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:122-130 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:158-166 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:16-34 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:184-192 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+339:94-102 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:112-120 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:136-144 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:155-163 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:175-183 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:199-207 "export '╔╡╔╡inject' was not found in '@angular/core'
+
+WARNING in ../node_modules/ngx-toastr/fesm2015/ngx-toastr.js
+608:22-40 "export '╔╡╔╡defineInjectable' was not found in '@angular/core'
+
+WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Failed to compile.
+i ∩╜ówdm∩╜ú: Compiling...
+
+ (ca758bb3)
+2021-05-16T14:21:23.1969801+05:30  [ERR] ERROR in ../node_modules/@angular/animations/fesm5/animations.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\animations.js'
+ERROR in ../node_modules/@angular/animations/fesm5/browser.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\browser.js'
+ERROR in ../node_modules/@angular/common/fesm5/common.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\common\fesm5\common.js'
+ERROR in ../node_modules/@angular/compiler/fesm5/compiler.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\compiler\fesm5\compiler.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+ERROR in ../node_modules/webpack-dev-server/client?http://0.0.0.0:0
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack-dev-server\client\index.js'
+
+ (19161665)
+2021-05-16T14:21:23.3982897+05:30  [INF] Date: 2021-05-16T08:51:22.227Z - Hash: 6738bcb5413cf197dd7f - Time: 4886ms
+5 unchanged chunks
+
+ (ad7165c0)
+2021-05-16T14:21:23.5697544+05:30  [ERR] ERROR in ClientApp/Services/category.service.ts(4,23): error TS2307: Cannot find module 'util'.
+ClientApp/Services/hotel.service.ts(6,23): error TS2307: Cannot find module 'util'.
+ClientApp/Services/item.service.ts(4,23): error TS2307: Cannot find module 'util'.
+ClientApp/Services/subcategory.service.ts(4,23): error TS2307: Cannot find module 'util'.
+ClientApp/app/category/edit-category/edit-category.component.ts(4,23): error TS2307: Cannot find module 'util'.
+ClientApp/app/category/view-category/view-category.component.ts(4,23): error TS2307: Cannot find module 'util'.
+ClientApp/app/hotel/add-hotel/add-hotel.component.ts(5,20): error TS2307: Cannot find module 'lodash'.
+ClientApp/app/hotel/edit-hotel/edit-hotel.component.ts(5,23): error TS2307: Cannot find module 'util'.
+ClientApp/app/hotel/edit-hotel/edit-hotel.component.ts(6,20): error TS2307: Cannot find module 'lodash'.
+ClientApp/app/hotel/view-hotel/view-hotel.component.ts(5,23): error TS2307: Cannot find module 'util'.
+ClientApp/app/item/add-item/add-item.component.ts(8,20): error TS2307: Cannot find module 'lodash'.
+ClientApp/app/item/edit-item/edit-item.component.ts(8,20): error TS2307: Cannot find module 'lodash'.
+ClientApp/app/subcategory/edit-subcategory/edit-subcategory.component.ts(4,23): error TS2307: Cannot find module 'util'.
+ClientApp/app/subcategory/view-subcategory/view-subcategory.component.ts(4,23): error TS2307: Cannot find module 'util'.
+
+ERROR in ../node_modules/@angular/animations/fesm5/animations.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\animations.js'
+ERROR in ../node_modules/@angular/animations/fesm5/browser.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\animations\fesm5\browser.js'
+ERROR in ../node_modules/@angular/common/fesm5/common.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\common\fesm5\common.js'
+ERROR in ../node_modules/@angular/compiler/fesm5/compiler.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\compiler\fesm5\compiler.js'
+ERROR in ../node_modules/lodash/lodash.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\lodash\lodash.js'
+ERROR in ../node_modules/style-loader/lib/addStyles.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\style-loader\lib\addStyles.js'
+ERROR in ../node_modules/webpack-dev-server/client?http://0.0.0.0:0
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack-dev-server\client\index.js'
+internal/fs/utils.js:220
+ (0805b7b8)
+2021-05-16T14:21:23.8621770+05:30  [ERR]     throw err;
+    ^
+
+Error: ENOENT: no such file or directory, lstat 'C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@angular\core'
+    at Object.realpathSync (fs.js:1529:7)
+    at C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@ngtools\webpack\src\angular_compiler_plugin.js:470:43
+    at SyncHook.eval [as call] (eval at create (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\tapable\lib\HookCodeFactory.js:19:10), <anonymous>:7:1)
+    at Compiler.createContextModuleFactory (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\Compiler.js:455:35)
+    at Compiler.newCompilationParams (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\Compiler.js:462:31)
+    at Compiler.compile (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\Compiler.js:469:23)
+    at C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\Watching.js:77:18
+    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\tapable\lib\HookCodeFactory.js:32:10), <anonymous>:33:1)
+    at Watching._go (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\Watching.js:40:32)
+    at Watching._invalidate (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\Watching.js:164:9)
+    at C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\Watching.js:135:10
+    at newCallback (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\@ngtools\webpack\src\virtual_file_system_decorator.js:126:13)
+    at Watchpack.<anonymous> (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\webpack\lib\node\NodeWatchFileSystem.js:43:4)
+    at Object.onceWrapper (events.js:300:26)
+    at Watchpack.emit (events.js:210:5)
+    at Watchpack._onTimeout (C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\node_modules\watchpack\lib\watchpack.js:144:7) {
+  errno: -4058,
+  syscall: 'lstat',
+  code: 'ENOENT',
+  path: 'C:\\Users\\Aru\\Desktop\\DeliveryMan\\GeoFence\\GeoFence\\node_modules\\@angular\\core'
+}
+The batch file cannot be found.
+npm ERR! code ELIFECYCLE
+ (a818c8ac)
+2021-05-16T14:35:43.6731961+05:30 0HM8O8JDSADRP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js   (ca22a1cb)
+2021-05-16T14:35:43.6906951+05:30 0HM8O8JDSADRR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js   (ca22a1cb)
+2021-05-16T14:35:43.7155171+05:30 0HM8O8JDSADRQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js   (ca22a1cb)
+2021-05-16T14:35:43.7219789+05:30 0HM8O8JDSADRS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js   (ca22a1cb)
+2021-05-16T14:35:43.7245568+05:30 0HM8O8JDSADRT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js   (ca22a1cb)
+2021-05-16T14:35:48.6658119+05:30 0HM8O8JDSADRS:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Failed to proxy the request to http://localhost:56973/runtime.js, because the request to the proxy target failed. Check that the proxy target server is running and accepting requests to http://localhost:56973/.
+
+The underlying exception message was 'No connection could be made because the target machine actively refused it'.Check the InnerException for more details. ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.SwaggerUI\SwaggerUIMiddleware.cs:line 72
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.Swagger\SwaggerMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-16T14:35:48.7897187+05:30 0HM8O8JDSADRQ:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Failed to proxy the request to http://localhost:56973/main.js, because the request to the proxy target failed. Check that the proxy target server is running and accepting requests to http://localhost:56973/.
+
+The underlying exception message was 'No connection could be made because the target machine actively refused it'.Check the InnerException for more details. ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.SwaggerUI\SwaggerUIMiddleware.cs:line 72
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.Swagger\SwaggerMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-16T14:35:48.8381067+05:30 0HM8O8JDSADRP:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Failed to proxy the request to http://localhost:56973/polyfills.js, because the request to the proxy target failed. Check that the proxy target server is running and accepting requests to http://localhost:56973/.
+
+The underlying exception message was 'No connection could be made because the target machine actively refused it'.Check the InnerException for more details. ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.SwaggerUI\SwaggerUIMiddleware.cs:line 72
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.Swagger\SwaggerMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-16T14:35:48.8507282+05:30 0HM8O8JDSADRT:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Failed to proxy the request to http://localhost:56973/styles.js, because the request to the proxy target failed. Check that the proxy target server is running and accepting requests to http://localhost:56973/.
+
+The underlying exception message was 'No connection could be made because the target machine actively refused it'.Check the InnerException for more details. ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.SwaggerUI\SwaggerUIMiddleware.cs:line 72
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.Swagger\SwaggerMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-16T14:35:49.0162791+05:30 0HM8O8JDSADRP:00000001 [INF] Request finished in 5242.5633ms 500 text/html; charset=utf-8 (791a596a)
+2021-05-16T14:35:49.0252288+05:30 0HM8O8JDSADRS:00000001 [INF] Request finished in 5238.4909ms 500 text/html; charset=utf-8 (791a596a)
+2021-05-16T14:35:49.0298795+05:30 0HM8O8JDSADRQ:00000001 [INF] Request finished in 5236.0741ms 500 text/html; charset=utf-8 (791a596a)
+2021-05-16T14:35:49.0310437+05:30 0HM8O8JDSADRT:00000001 [INF] Request finished in 5238.4513ms 500 text/html; charset=utf-8 (791a596a)
+2021-05-16T14:35:49.0376472+05:30 0HM8O8JDSADRR:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Failed to proxy the request to http://localhost:56973/vendor.js, because the request to the proxy target failed. Check that the proxy target server is running and accepting requests to http://localhost:56973/.
+
+The underlying exception message was 'No connection could be made because the target machine actively refused it'.Check the InnerException for more details. ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.SwaggerUI\SwaggerUIMiddleware.cs:line 72
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.Swagger\SwaggerMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-16T14:35:49.1253385+05:30 0HM8O8JDSADRR:00000001 [INF] Request finished in 5383.0066ms 500 text/html; charset=utf-8 (791a596a)

@@ -2,12 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormArray, FormControl } from "@angular/forms";
 import { Router } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
-import { debug } from 'util';
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
-import { forEach } from '@angular/router/src/utils/collection';
 import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
-
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
     selector: 'app-edit-hotel',
@@ -17,6 +15,7 @@ import { FuncServiceService } from 'ClientApp/app/services/func-service.service'
 export class EditHotelComponent implements OnInit {
     constructor(private formBuilder: FormBuilder,
         private router: Router,
+        private notification: NotificationService,
         private func: FuncServiceService,
         private apiService: HotelService) { }
 

@@ -23,6 +23,7 @@
               "ClientApp/assets"
             ],
             "styles": [
+              "node_modules/ngx-toastr/toastr.css",
               "ClientApp/styles.css"
             ],
             "scripts": []

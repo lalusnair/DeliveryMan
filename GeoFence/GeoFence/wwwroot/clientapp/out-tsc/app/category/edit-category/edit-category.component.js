@@ -11,17 +11,19 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { CategoryService } from 'ClientApp/Services/category.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var EditCategoryComponent = /** @class */ (function () {
-    function EditCategoryComponent(formBuilder, router, apiService) {
+    function EditCategoryComponent(formBuilder, router, notification, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
+        this.notification = notification;
         this.apiService = apiService;
     }
     EditCategoryComponent.prototype.ngOnInit = function () {
         var _this = this;
         var categoryID = window.localStorage.getItem("editCategoryId");
         if (!categoryID) {
-            alert("Invalid action.");
+            this.notification.showError('Invalid Category', 'Invalid!');
             this.router.navigate(['ListCategory']);
             return;
         }
@@ -32,7 +34,6 @@ var EditCategoryComponent = /** @class */ (function () {
         });
         this.apiService.GetCategoryById(parseInt(categoryID))
             .subscribe(function (data) {
-            console.log(data);
             _this.editForm.setValue(data);
         });
     };
@@ -41,6 +42,7 @@ var EditCategoryComponent = /** @class */ (function () {
         console.log(this.editForm.value);
         this.apiService.UpdateCategory(this.editForm.value)
             .subscribe(function (data) {
+            _this.notification.showSuccess('Category Updated Successfully', 'Edit Category');
             _this.router.navigate(['ListCategory']);
         });
     };
@@ -53,7 +55,10 @@ var EditCategoryComponent = /** @class */ (function () {
             templateUrl: './edit-category.component.html',
             styleUrls: ['./edit-category.component.css']
         }),
-        __metadata("design:paramtypes", [FormBuilder, Router, CategoryService])
+        __metadata("design:paramtypes", [FormBuilder,
+            Router,
+            NotificationService,
+            CategoryService])
     ], EditCategoryComponent);
     return EditCategoryComponent;
 }());

@@ -10,9 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { SubcategoryService } from 'ClientApp/Services/subcategory.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var ListSubcategoryComponent = /** @class */ (function () {
-    function ListSubcategoryComponent(router, subCategoryServ) {
+    function ListSubcategoryComponent(router, notification, subCategoryServ) {
         this.router = router;
+        this.notification = notification;
         this._subCategoryService = subCategoryServ;
     }
     ListSubcategoryComponent.prototype.ngOnInit = function () {
@@ -52,7 +54,9 @@ var ListSubcategoryComponent = /** @class */ (function () {
             templateUrl: './list-subcategory.component.html',
             styleUrls: ['./list-subcategory.component.css']
         }),
-        __metadata("design:paramtypes", [Router, SubcategoryService])
+        __metadata("design:paramtypes", [Router,
+            NotificationService,
+            SubcategoryService])
     ], ListSubcategoryComponent);
     return ListSubcategoryComponent;
 }());

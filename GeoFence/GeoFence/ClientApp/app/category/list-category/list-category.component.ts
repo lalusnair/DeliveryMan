@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CategoryService } from 'ClientApp/Services/category.service';
 import { CategoryDetailsDTO } from 'ClientApp/app/DTOs/Category_DTO';
 import { Router } from '@angular/router';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
     selector: 'app-list-category',
@@ -14,7 +15,9 @@ export class ListCategoryComponent implements OnInit {
     private _categoryService: CategoryService;
     public categoryData: CategoryDetailsDTO[];
 
-    constructor(private router: Router, categoryServ: CategoryService) {
+    constructor(private router: Router,
+        private notification: NotificationService,
+        categoryServ: CategoryService) {
         this._categoryService = categoryServ;
     }
 
@@ -32,7 +35,9 @@ export class ListCategoryComponent implements OnInit {
         this._categoryService.DeleteCatgory(category.categoryId).subscribe(res => {
             var idx = this.categoryData.indexOf(category);
             category.isActive = category.isActive == 1 ? 0 : 1;
+            var activationStatus = category.isActive == 1 ? 'Activated' : 'Inactivated';
             this.categoryData[idx] = category;
+            this.notification.showSuccess('Category '+activationStatus+' Successfully', 'Category');
         });
     };
     editCategory(category: CategoryDetailsDTO): void {

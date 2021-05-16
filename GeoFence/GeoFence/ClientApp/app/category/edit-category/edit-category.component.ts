@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
-import { debug } from 'util';
 import { CategoryService } from 'ClientApp/Services/category.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
   selector: 'app-edit-category',
@@ -11,14 +11,17 @@ import { CategoryService } from 'ClientApp/Services/category.service';
 })
 export class EditCategoryComponent implements OnInit {
 
-    constructor(private formBuilder: FormBuilder, private router: Router, private apiService: CategoryService) { }
+    constructor(private formBuilder: FormBuilder,
+        private router: Router,
+        private notification: NotificationService,
+        private apiService: CategoryService) { }
 
     editForm: FormGroup;
 
     ngOnInit() {
         let categoryID = window.localStorage.getItem("editCategoryId");
         if (!categoryID) {
-            alert("Invalid action.")
+            this.notification.showError('Invalid Category', 'Invalid!');
             this.router.navigate(['ListCategory']);
             return;
         }
@@ -30,7 +33,6 @@ export class EditCategoryComponent implements OnInit {
 
         this.apiService.GetCategoryById(parseInt(categoryID))
             .subscribe(data => {
-                console.log(data);
                 this.editForm.setValue(data);
             });
 
@@ -39,6 +41,7 @@ export class EditCategoryComponent implements OnInit {
         console.log(this.editForm.value);
         this.apiService.UpdateCategory(this.editForm.value)
             .subscribe(data => {
+                this.notification.showSuccess('Category Updated Successfully', 'Edit Category');
                 this.router.navigate(['ListCategory']);
             });
     }

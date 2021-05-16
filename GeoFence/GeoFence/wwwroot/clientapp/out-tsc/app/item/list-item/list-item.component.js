@@ -10,9 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ItemService } from 'ClientApp/Services/item.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var ListItemComponent = /** @class */ (function () {
-    function ListItemComponent(router, itemService) {
+    function ListItemComponent(router, notification, itemService) {
         this.router = router;
+        this.notification = notification;
         this._itemService = itemService;
     }
     ListItemComponent.prototype.ngOnInit = function () {
@@ -52,7 +54,9 @@ var ListItemComponent = /** @class */ (function () {
             templateUrl: './list-item.component.html',
             styleUrls: ['./list-item.component.css']
         }),
-        __metadata("design:paramtypes", [Router, ItemService])
+        __metadata("design:paramtypes", [Router,
+            NotificationService,
+            ItemService])
     ], ListItemComponent);
     return ListItemComponent;
 }());

@@ -11,10 +11,12 @@ import { Component } from '@angular/core';
 import { FormBuilder } from "@angular/forms";
 import { Router } from "@angular/router";
 import { SubcategoryService } from 'ClientApp/Services/subcategory.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var AddSubcategoryComponent = /** @class */ (function () {
-    function AddSubcategoryComponent(formBuilder, router, apiService) {
+    function AddSubcategoryComponent(formBuilder, router, notification, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
+        this.notification = notification;
         this.apiService = apiService;
     }
     AddSubcategoryComponent.prototype.ngOnInit = function () {
@@ -45,7 +47,10 @@ var AddSubcategoryComponent = /** @class */ (function () {
             templateUrl: './add-subcategory.component.html',
             styleUrls: ['./add-subcategory.component.css']
         }),
-        __metadata("design:paramtypes", [FormBuilder, Router, SubcategoryService])
+        __metadata("design:paramtypes", [FormBuilder,
+            Router,
+            NotificationService,
+            SubcategoryService])
     ], AddSubcategoryComponent);
     return AddSubcategoryComponent;
 }());

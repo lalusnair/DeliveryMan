@@ -10,9 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from '@angular/core';
 import { HotelService } from 'ClientApp/Services/hotel.service';
 import { Router } from '@angular/router';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var ListHotelComponent = /** @class */ (function () {
-    function ListHotelComponent(router, hotelServ) {
+    function ListHotelComponent(router, notification, hotelServ) {
         this.router = router;
+        this.notification = notification;
         this._hotelServ = hotelServ;
     }
     ListHotelComponent.prototype.ngOnInit = function () {
@@ -53,7 +55,9 @@ var ListHotelComponent = /** @class */ (function () {
             templateUrl: './list-hotel.component.html',
             styleUrls: ['./list-hotel.component.css']
         }),
-        __metadata("design:paramtypes", [Router, HotelService])
+        __metadata("design:paramtypes", [Router,
+            NotificationService,
+            HotelService])
     ], ListHotelComponent);
     return ListHotelComponent;
 }());

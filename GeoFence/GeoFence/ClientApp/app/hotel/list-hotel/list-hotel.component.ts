@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HotelService } from 'ClientApp/Services/hotel.service';
 import { HotelDetailsDTO } from 'ClientApp/app/DTOs/Hotel_DTO';
 import { Router } from '@angular/router';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
     selector: 'app-list-hotel',
@@ -13,7 +14,9 @@ export class ListHotelComponent implements OnInit {
 
     private _hotelServ: HotelService;
     public hotelData: HotelDetailsDTO[];
-    constructor(private router: Router, hotelServ: HotelService) {
+    constructor(private router: Router,
+        private notification: NotificationService,
+        hotelServ: HotelService) {
         this._hotelServ = hotelServ;
 
     }

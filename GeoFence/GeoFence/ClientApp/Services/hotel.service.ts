@@ -3,7 +3,6 @@ import { Http } from '@angular/http';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { HotelDetailsDTO } from 'ClientApp/app/DTOs/Hotel_DTO';
 import { HotelDetailsClass } from 'ClientApp/app/DTOs/Hotel_DTO';
-import { debug } from 'util';
 
 
 @Injectable({

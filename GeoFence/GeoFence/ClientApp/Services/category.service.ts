@@ -1,7 +1,6 @@
 import { Component, Inject, InjectionToken, Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
-import { debug } from 'util';
 import { CategoryDetailsDTO } from 'ClientApp/app/DTOs/Category_DTO';
 
 @Injectable({

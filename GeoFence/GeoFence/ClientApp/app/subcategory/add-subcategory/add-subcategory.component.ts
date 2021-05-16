@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { SubcategoryService } from 'ClientApp/Services/subcategory.service';
 import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
     selector: 'app-add-subcategory',
@@ -11,7 +12,10 @@ import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
 })
 export class AddSubcategoryComponent implements OnInit {
 
-    constructor(private formBuilder: FormBuilder, private router: Router, private apiService: SubcategoryService) { }
+    constructor(private formBuilder: FormBuilder,
+        private router: Router,
+        private notification: NotificationService,
+        private apiService: SubcategoryService) { }
 
     addForm: FormGroup;
     Categories: CategoryDropDown[];

@@ -76,6 +76,7 @@ namespace GeoFence.Controllers
 
 
         [HttpPost("HotelDetails/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<HotelDTO>> Get([FromBody] int id)
         {
             try
@@ -92,6 +93,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("DeleteHotel/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> DeleteHotel([FromBody] int id)
         {
             try
@@ -108,6 +110,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("CreateHotel")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> CreateHotel([FromBody] HotelDTO hotelDetails)
         {
             try
@@ -125,6 +128,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("UpdateHotel")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> UpdateHotel([FromBody] HotelDTO hotelDetails)
         {
             try
@@ -180,6 +184,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("Category/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<Category>> GetCategory([FromBody] int id)
         {
             try
@@ -197,6 +202,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("DeleteCategory/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> DeleteCategory([FromBody] int id)
         {
 
@@ -214,6 +220,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("CreateCategory")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> CreateCategory([FromBody] string categoryName)
         {
 
@@ -231,6 +238,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("UpdateCategory")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> updateCategory([FromBody] Category categoryDetails)
         {
 
@@ -270,6 +278,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("GetSubCategoriesForDropDown/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<List<SubCategoryDropDown>> GetSubCategoriesForDropDown([FromBody] int id)
         {
             try
@@ -287,6 +296,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("SubCategory/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<SubCategory>> GetSubCategory([FromBody] int id)
         {
             try
@@ -304,6 +314,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("DeleteSubCategory/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> DeleteSubCategory([FromBody] int id)
         {
             try
@@ -319,6 +330,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("CreateSubCategory")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> CreateSubCategory([FromBody] SubCategory subCategory)
         {
             try
@@ -334,6 +346,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("UpdateSubCategory")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> updateSubCategory([FromBody] SubCategory subCategory)
         {
             try
@@ -369,6 +382,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("Item/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<Item>> GetItem([FromBody] int id)
         {
             try
@@ -385,6 +399,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("DeleteItem/{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> DeleteItem([FromBody] int id)
         {
 
@@ -401,6 +416,7 @@ namespace GeoFence.Controllers
         }
 
         [HttpPost("CreateItem")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> CreateItem([FromBody] Item item)
         {
             try
@@ -419,6 +435,7 @@ namespace GeoFence.Controllers
 
 
         [HttpPost("UpdateItem")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<bool>> UpdateItem([FromBody] Item item)
         {
             try
