@@ -1,0 +1,21 @@
+2021-05-16T13:51:29.4314856+05:30  [INF] Starting @angular/cli on port 56655... (a880bae1)
+2021-05-16T13:51:31.7947936+05:30 0HM8O8EE1FAA0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T13:51:31.8061741+05:30 0HM8O8EE1FA9V:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8840/  0 (ca22a1cb)
+2021-05-16T13:51:32.3249775+05:30 0HM8O8EE1FAA0:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2021-05-16T13:51:32.3394630+05:30 0HM8O8EE1FA9V:00000001 [INF] Request finished in 577.1653ms 200  (791a596a)
+2021-05-16T13:51:43.1211404+05:30  [INF] > client-app@0.0.0 start C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence
+> ng serve "--port" "56655"
+
+** Angular Live Development Server is listening on localhost:56655, open your browser on http://localhost:56655/ **
+ (12e9aa32)
+2021-05-16T13:52:04.3781675+05:30  [INF] Date: 2021-05-16T08:22:04.224Z
+Hash: 929e7ae47c363c53bf23
+Time: 20734ms
+chunk {main} main.js, main.js.map (main) 2.02 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 670 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 252 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 335 kB [initial] [rendered]
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (3209a5e1)
+2021-05-16T13:52:06.1711789+05:30 0HM8O8EE1FAA0:00000001 [INF] Request finished in 34348.4106ms 404 text/html; charset=utf-8 (791a596a)

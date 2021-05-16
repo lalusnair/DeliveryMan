@@ -29,6 +29,9 @@ import { EditItemComponent } from './item/edit-item/edit-item.component';
 import { ViewItemComponent } from './item/view-item/view-item.component';
 import { ListItemComponent } from './item/list-item/list-item.component';
 import { ActiveInactivePipe } from './shared/active-inactive.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -59,7 +62,10 @@ var AppModule = /** @class */ (function () {
                 HttpClientModule,
                 FormsModule,
                 ReactiveFormsModule,
-                AppRoutingModule
+                AppRoutingModule,
+                BrowserAnimationsModule,
+                ToastrModule.forRoot(),
+                NgHttpLoaderModule.forRoot(),
             ],
             providers: [{ provide: 'BASE_URL', useFactory: getBaseUrl }, HotelService],
             bootstrap: [AppComponent]

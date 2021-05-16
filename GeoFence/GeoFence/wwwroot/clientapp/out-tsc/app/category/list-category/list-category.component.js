@@ -10,9 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from '@angular/core';
 import { CategoryService } from 'ClientApp/Services/category.service';
 import { Router } from '@angular/router';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var ListCategoryComponent = /** @class */ (function () {
-    function ListCategoryComponent(router, categoryServ) {
+    function ListCategoryComponent(router, notification, categoryServ) {
         this.router = router;
+        this.notification = notification;
         this._categoryService = categoryServ;
     }
     ListCategoryComponent.prototype.ngOnInit = function () {
@@ -30,7 +32,9 @@ var ListCategoryComponent = /** @class */ (function () {
         this._categoryService.DeleteCatgory(category.categoryId).subscribe(function (res) {
             var idx = _this.categoryData.indexOf(category);
             category.isActive = category.isActive == 1 ? 0 : 1;
+            var activationStatus = category.isActive == 1 ? 'Activated' : 'Inactivated';
             _this.categoryData[idx] = category;
+            _this.notification.showSuccess('Category ' + activationStatus + ' Successfully', 'Category');
         });
     };
     ;
@@ -52,7 +56,9 @@ var ListCategoryComponent = /** @class */ (function () {
             templateUrl: './list-category.component.html',
             styleUrls: ['./list-category.component.css']
         }),
-        __metadata("design:paramtypes", [Router, CategoryService])
+        __metadata("design:paramtypes", [Router,
+            NotificationService,
+            CategoryService])
     ], ListCategoryComponent);
     return ListCategoryComponent;
 }());

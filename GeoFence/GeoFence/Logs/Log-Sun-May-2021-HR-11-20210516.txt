@@ -1,0 +1,94 @@
+2021-05-16T11:16:07.3605107+05:30  [INF] Starting @angular/cli on port 50221... (ca330584)
+2021-05-16T11:16:09.0181305+05:30 0HM8O5NJPAMBE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T11:16:09.0181304+05:30 0HM8O5NJPAMBF:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:8840/  0 (ca22a1cb)
+2021-05-16T11:16:09.1768703+05:30 0HM8O5NJPAMBE:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2021-05-16T11:16:09.2115582+05:30 0HM8O5NJPAMBF:00000001 [INF] Request finished in 181.9686ms 200  (791a596a)
+2021-05-16T11:16:55.1475074+05:30  [INF] > client-app@0.0.0 start C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence
+> ng serve "--port" "50221"
+
+** Angular Live Development Server is listening on localhost:50221, open your browser on http://localhost:50221/ **
+ (8a91e79a)
+2021-05-16T11:17:00.7461840+05:30 0HM8O5NJPAMBE:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 50 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.SwaggerUI\SwaggerUIMiddleware.cs:line 72
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.Swagger\SwaggerMiddleware.cs:line 32
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-16T11:17:00.8556855+05:30 0HM8O5NJPAMBE:00000001 [INF] Request finished in 51817.6209ms 500 text/html; charset=utf-8 (791a596a)
+2021-05-16T11:17:21.8399692+05:30  [INF] Date: 2021-05-16T05:47:21.835Z
+Hash: 8729d512071bde35c4c6
+Time: 26043ms
+chunk {main} main.js, main.js.map (main) 210 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 232 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 244 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.51 MB [initial] [rendered]
+
+ (8cf890f1)
+2021-05-16T11:17:21.8856565+05:30  [INF] WARNING in Circular dependency detected:
+ClientApp\app\app.module.ts -> ClientApp\main.ts -> ClientApp\app\app.module.ts
+
+WARNING in Circular dependency detected:
+ClientApp\main.ts -> ClientApp\app\app.module.ts -> ClientApp\main.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (9a001bae)
+2021-05-16T11:17:41.5909146+05:30 0HM8O5NJPAMBE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/   (ca22a1cb)
+2021-05-16T11:17:46.0926156+05:30 0HM8O5NJPAMBE:00000002 [INF] Request finished in 4423.2563ms 200 text/html; charset=UTF-8 (791a596a)
+2021-05-16T11:17:46.5511442+05:30 0HM8O5NJPAMBG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/vendor.js   (ca22a1cb)
+2021-05-16T11:17:46.5575406+05:30 0HM8O5NJPAMBH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/main.js   (ca22a1cb)
+2021-05-16T11:17:46.6434009+05:30 0HM8O5NJPAMBI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/styles.js   (ca22a1cb)
+2021-05-16T11:17:46.7208726+05:30 0HM8O5NJPAMBG:00000001 [INF] Request finished in 310.0423ms 304  (791a596a)
+2021-05-16T11:17:46.7749908+05:30 0HM8O5NJPAMBI:00000001 [INF] Request finished in 40.146ms 304  (791a596a)
+2021-05-16T11:17:46.7766454+05:30 0HM8O5NJPAMBJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/polyfills.js   (ca22a1cb)
+2021-05-16T11:17:46.7862249+05:30 0HM8O5NJPAMBE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/runtime.js   (ca22a1cb)
+2021-05-16T11:17:46.8163581+05:30 0HM8O5NJPAMBJ:00000001 [INF] Request finished in 33.358ms 304  (791a596a)
+2021-05-16T11:17:49.1702674+05:30 0HM8O5NJPAMBE:00000003 [INF] Request finished in 2367.181ms 304  (791a596a)
+2021-05-16T11:17:49.5640963+05:30 0HM8O5NJPAMBH:00000001 [INF] Request finished in 2962.1282ms 200 application/javascript; charset=UTF-8 (791a596a)
+2021-05-16T11:17:53.4110630+05:30 0HM8O5NJPAMBG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/info?t=1621144072833   (ca22a1cb)
+2021-05-16T11:17:53.7672025+05:30 0HM8O5NJPAMBJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/api/Data/GetAllSubCategories   (ca22a1cb)
+2021-05-16T11:17:53.7908280+05:30 0HM8O5NJPAMBI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/favicon.ico   (ca22a1cb)
+2021-05-16T11:17:53.8194942+05:30 0HM8O5NJPAMBG:00000002 [INF] Request finished in 797.8478ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T11:17:53.9115591+05:30 0HM8O5NJPAMBE:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/657/iujbvdzi/websocket   (ca22a1cb)
+2021-05-16T11:17:53.9121373+05:30 0HM8O5NJPAMBI:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\Aru\Desktop\DeliveryMan\GeoFence\GeoFence\wwwroot\clientapp\dist\favicon.ico"' (27b0a520)
+2021-05-16T11:17:53.9261232+05:30 0HM8O5NJPAMBI:00000002 [INF] Request finished in 763.0046ms 200 image/x-icon (791a596a)
+2021-05-16T11:17:53.9485888+05:30 0HM8O5NJPAMBJ:00000002 [INF] Route matched with "{action = \"GetAllSubCategories\", controller = \"Data\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[GeoFence.ClientApp.Models.SubCategory]] GetAllSubCategories()" on controller "GeoFence.Controllers.DataController" ("GeoFence"). (122b2fdf)
+2021-05-16T11:17:54.0108901+05:30 0HM8O5NJPAMBJ:00000002 [INF] Executing action method "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)" - Validation state: Valid (dad538d7)
+2021-05-16T11:17:55.5687701+05:30 0HM8O5NJPAMBJ:00000002 [INF] Executed action method "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1423.7449ms. (50a9e262)
+2021-05-16T11:17:55.6320662+05:30 0HM8O5NJPAMBJ:00000002 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[GeoFence.ClientApp.Models.SubCategory, GeoFence, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2021-05-16T11:17:56.0303081+05:30 0HM8O5NJPAMBJ:00000002 [INF] Executed action "GeoFence.Controllers.DataController.GetAllSubCategories (GeoFence)" in 2054.5728ms (afa2e885)
+2021-05-16T11:17:56.0482636+05:30 0HM8O5NJPAMBJ:00000002 [INF] Request finished in 2880.7825ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-16T11:17:57.9919983+05:30 0HM8O5NJPAMBH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/api/Data/GetAllHotels   (ca22a1cb)
+2021-05-16T11:17:58.0094479+05:30 0HM8O5NJPAMBH:00000002 [INF] Route matched with "{action = \"GetAllHotelDetails\", controller = \"Data\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[GeoFence.ClientApp.Models.HotelDTO]] GetAllHotelDetails()" on controller "GeoFence.Controllers.DataController" ("GeoFence"). (122b2fdf)
+2021-05-16T11:17:58.0135804+05:30 0HM8O5NJPAMBH:00000002 [INF] Executing action method "GeoFence.Controllers.DataController.GetAllHotelDetails (GeoFence)" - Validation state: Valid (dad538d7)
+2021-05-16T11:17:59.6195447+05:30 0HM8O5NJPAMBH:00000002 [INF] Executed action method "GeoFence.Controllers.DataController.GetAllHotelDetails (GeoFence)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1555.103ms. (50a9e262)
+2021-05-16T11:17:59.6736166+05:30 0HM8O5NJPAMBH:00000002 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[GeoFence.ClientApp.Models.HotelDTO, GeoFence, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2021-05-16T11:17:59.7647455+05:30 0HM8O5NJPAMBH:00000002 [INF] Executed action "GeoFence.Controllers.DataController.GetAllHotelDetails (GeoFence)" in 1732.4022ms (afa2e885)
+2021-05-16T11:17:59.8622234+05:30 0HM8O5NJPAMBH:00000002 [INF] Request finished in 1789.2625ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-16T11:18:03.6111867+05:30 0HM8O5NJPAMBG:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:8840/api/Data/HotelDetails/id= application/json 1 (ca22a1cb)
+2021-05-16T11:18:03.6630616+05:30 0HM8O5NJPAMBG:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Data\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[GeoFence.ClientApp.Models.HotelDTO]] Get(Int32)" on controller "GeoFence.Controllers.DataController" ("GeoFence"). (122b2fdf)
+2021-05-16T11:18:03.7796933+05:30 0HM8O5NJPAMBG:00000003 [INF] Executing action method "GeoFence.Controllers.DataController.Get (GeoFence)" - Validation state: Valid (dad538d7)
+2021-05-16T11:18:04.1653148+05:30 0HM8O5NJPAMBG:00000003 [INF] Executed action method "GeoFence.Controllers.DataController.Get (GeoFence)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 379.9397ms. (50a9e262)
+2021-05-16T11:18:04.1701733+05:30 0HM8O5NJPAMBG:00000003 [INF] Executing ObjectResult, writing value of type '"GeoFence.ClientApp.Models.HotelDTO"'. (8a1b66c8)
+2021-05-16T11:18:04.1865318+05:30 0HM8O5NJPAMBG:00000003 [INF] Executed action "GeoFence.Controllers.DataController.Get (GeoFence)" in 507.421ms (afa2e885)
+2021-05-16T11:18:04.2426454+05:30 0HM8O5NJPAMBG:00000003 [INF] Request finished in 595.4692ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-16T11:18:10.7598066+05:30 0HM8O5NJPAMBI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8840/api/Data/GetAllItems   (ca22a1cb)
+2021-05-16T11:18:10.7695444+05:30 0HM8O5NJPAMBI:00000003 [INF] Route matched with "{action = \"GetAllItems\", controller = \"Data\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[GeoFence.ClientApp.Models.Item]] GetAllItems()" on controller "GeoFence.Controllers.DataController" ("GeoFence"). (122b2fdf)
+2021-05-16T11:18:10.7730525+05:30 0HM8O5NJPAMBI:00000003 [INF] Executing action method "GeoFence.Controllers.DataController.GetAllItems (GeoFence)" - Validation state: Valid (dad538d7)
+2021-05-16T11:18:11.0338908+05:30 0HM8O5NJPAMBI:00000003 [INF] Executed action method "GeoFence.Controllers.DataController.GetAllItems (GeoFence)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 257.8028ms. (50a9e262)
+2021-05-16T11:18:11.0389619+05:30 0HM8O5NJPAMBI:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[GeoFence.ClientApp.Models.Item, GeoFence, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2021-05-16T11:18:11.0697709+05:30 0HM8O5NJPAMBI:00000003 [INF] Executed action "GeoFence.Controllers.DataController.GetAllItems (GeoFence)" in 285.3195ms (afa2e885)
+2021-05-16T11:18:11.0842560+05:30 0HM8O5NJPAMBI:00000003 [INF] Request finished in 316.5121ms 200 application/json; charset=utf-8 (791a596a)
+2021-05-16T11:22:30.6056253+05:30 0HM8O5NJPAMBK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/swagger/v1/swagger.json   (ca22a1cb)
+2021-05-16T11:22:30.8904345+05:30 0HM8O5NJPAMBK:00000001 [INF] Request finished in 283.7132ms 200 application/json;charset=utf-8 (791a596a)
+2021-05-16T11:22:31.1715290+05:30 0HM8O5NJPAMBE:00000004 [INF] Request finished in 277309.3712ms 101  (791a596a)
+2021-05-16T11:24:32.7803507+05:30 0HM8O5NJPAMBL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/info?t=1621144472745   (ca22a1cb)
+2021-05-16T11:24:34.8736254+05:30 0HM8O5NJPAMBL:00000001 [INF] Request finished in 2092.0066ms 200 application/json; charset=UTF-8 (791a596a)
+2021-05-16T11:24:34.9183665+05:30 0HM8O5NJPAMBL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8840/sockjs-node/703/ux5jdjno/websocket   (ca22a1cb)
+2021-05-16T11:41:40.0341643+05:30 0HM8O5NJPAMBL:00000002 [INF] Request finished in 1025074.0121ms 101  (791a596a)

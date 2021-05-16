@@ -11,10 +11,12 @@ import { Component } from '@angular/core';
 import { FormBuilder } from "@angular/forms";
 import { Router } from "@angular/router";
 import { CategoryService } from 'ClientApp/Services/category.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var AddCategoryComponent = /** @class */ (function () {
-    function AddCategoryComponent(formBuilder, router, apiService) {
+    function AddCategoryComponent(formBuilder, router, notification, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
+        this.notification = notification;
         this.apiService = apiService;
     }
     AddCategoryComponent.prototype.ngOnInit = function () {
@@ -27,6 +29,7 @@ var AddCategoryComponent = /** @class */ (function () {
         var _this = this;
         this.apiService.CreateCategory(this.addForm.value)
             .subscribe(function (data) {
+            _this.notification.showSuccess('Category Added Successfully', 'Add Category');
             _this.router.navigate(['ListCategory']);
         });
     };
@@ -39,7 +42,10 @@ var AddCategoryComponent = /** @class */ (function () {
             templateUrl: './add-category.component.html',
             styleUrls: ['./add-category.component.css']
         }),
-        __metadata("design:paramtypes", [FormBuilder, Router, CategoryService])
+        __metadata("design:paramtypes", [FormBuilder,
+            Router,
+            NotificationService,
+            CategoryService])
     ], AddCategoryComponent);
     return AddCategoryComponent;
 }());

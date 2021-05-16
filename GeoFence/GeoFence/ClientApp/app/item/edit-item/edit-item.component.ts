@@ -7,8 +7,8 @@ import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
 import { SubCategoryDropDown } from 'ClientApp/app/DTOs/SubCategory_DTO';
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
-import { forEach } from '@angular/router/src/utils/collection';
 import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
     selector: 'app-edit-item',
@@ -24,6 +24,7 @@ export class EditItemComponent implements OnInit {
     constructor(private formBuilder: FormBuilder,
         private router: Router,
         private func: FuncServiceService,
+        private notification: NotificationService,
         private apiService: ItemService) { }
 
     editForm: FormGroup;

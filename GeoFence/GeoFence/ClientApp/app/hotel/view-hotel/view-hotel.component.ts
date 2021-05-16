@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormArray, FormControl } from "@angular/forms";
 import { Router } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
-import { debug } from 'util';
 import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
 
 @Component({

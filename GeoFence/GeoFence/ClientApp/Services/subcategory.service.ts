@@ -1,7 +1,6 @@
 import { Component, Inject, InjectionToken, Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
-import { debug } from 'util';
 import { SubCategoryDetailsDTO } from 'ClientApp/app/DTOs/SubCategory_DTO';
 import { CategoryDropDown } from 'ClientApp/app/DTOs/Category_DTO';
 

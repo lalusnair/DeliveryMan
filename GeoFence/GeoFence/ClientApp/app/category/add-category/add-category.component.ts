@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { CategoryService } from 'ClientApp/Services/category.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
     selector: 'app-add-category',
@@ -10,7 +11,10 @@ import { CategoryService } from 'ClientApp/Services/category.service';
 })
 export class AddCategoryComponent implements OnInit {
 
-    constructor(private formBuilder: FormBuilder, private router: Router, private apiService: CategoryService) { }
+    constructor(private formBuilder: FormBuilder,
+        private router: Router,
+        private notification: NotificationService,
+        private apiService: CategoryService) { }
 
     addForm: FormGroup;
 
@@ -24,6 +28,7 @@ export class AddCategoryComponent implements OnInit {
     onSubmit() {
         this.apiService.CreateCategory(this.addForm.value)
             .subscribe(data => {
+                this.notification.showSuccess('Category Added Successfully', 'Add Category');
                 this.router.navigate(['ListCategory']);
             });
     }

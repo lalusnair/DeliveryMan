@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ItemDetailsDTO } from 'ClientApp/app/DTOs/Item_DTO';
 import { ItemService } from 'ClientApp/Services/item.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
   selector: 'app-list-item',
@@ -13,7 +14,9 @@ export class ListItemComponent implements OnInit {
     private _itemService: ItemService;
     public itemData: ItemDetailsDTO[];
 
-    constructor(private router: Router, itemService: ItemService) {
+    constructor(private router: Router,
+        private notification: NotificationService,
+        itemService: ItemService) {
         this._itemService = itemService;
     }
     ngOnInit() {

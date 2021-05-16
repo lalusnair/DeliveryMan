@@ -13,11 +13,13 @@ import { Router } from "@angular/router";
 import { ItemService } from 'ClientApp/Services/item.service';
 import * as _ from 'lodash';
 import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var AddItemComponent = /** @class */ (function () {
-    function AddItemComponent(formBuilder, router, func, apiService) {
+    function AddItemComponent(formBuilder, router, func, notification, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
         this.func = func;
+        this.notification = notification;
         this.apiService = apiService;
         this.cardImageBase64arr = [];
     }
@@ -172,6 +174,7 @@ var AddItemComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [FormBuilder,
             Router,
             FuncServiceService,
+            NotificationService,
             ItemService])
     ], AddItemComponent);
     return AddItemComponent;

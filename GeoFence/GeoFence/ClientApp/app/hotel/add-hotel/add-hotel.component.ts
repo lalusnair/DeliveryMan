@@ -4,8 +4,8 @@ import { Router, RouterLinkWithHref } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
-import { forEach } from '@angular/router/src/utils/collection';
 import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 
 @Component({
     selector: 'app-add-hotel',
@@ -16,6 +16,7 @@ export class AddHotelComponent implements OnInit {
     constructor(private formBuilder: FormBuilder,
         private router: Router,
         private func: FuncServiceService,
+        private notification: NotificationService,
         private sanitizer: DomSanitizer,
         private apiService: HotelService) { }
 

@@ -14,11 +14,13 @@ import { HotelService } from "../../../Services/hotel.service";
 import * as _ from 'lodash';
 import { DomSanitizer } from '@angular/platform-browser';
 import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var AddHotelComponent = /** @class */ (function () {
-    function AddHotelComponent(formBuilder, router, func, sanitizer, apiService) {
+    function AddHotelComponent(formBuilder, router, func, notification, sanitizer, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
         this.func = func;
+        this.notification = notification;
         this.sanitizer = sanitizer;
         this.apiService = apiService;
         this.cardImageBase64arr = [];
@@ -174,6 +176,7 @@ var AddHotelComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [FormBuilder,
             Router,
             FuncServiceService,
+            NotificationService,
             DomSanitizer,
             HotelService])
     ], AddHotelComponent);

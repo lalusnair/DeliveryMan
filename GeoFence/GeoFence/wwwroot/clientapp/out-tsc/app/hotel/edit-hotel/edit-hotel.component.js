@@ -13,10 +13,12 @@ import { Router } from "@angular/router";
 import { HotelService } from "../../../Services/hotel.service";
 import * as _ from 'lodash';
 import { FuncServiceService } from 'ClientApp/app/services/func-service.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var EditHotelComponent = /** @class */ (function () {
-    function EditHotelComponent(formBuilder, router, func, apiService) {
+    function EditHotelComponent(formBuilder, router, notification, func, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
+        this.notification = notification;
         this.func = func;
         this.apiService = apiService;
         this.cardImageBase64arr = [];
@@ -199,6 +201,7 @@ var EditHotelComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [FormBuilder,
             Router,
+            NotificationService,
             FuncServiceService,
             HotelService])
     ], EditHotelComponent);

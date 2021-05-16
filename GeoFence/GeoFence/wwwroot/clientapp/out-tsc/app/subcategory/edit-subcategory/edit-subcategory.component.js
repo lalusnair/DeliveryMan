@@ -11,10 +11,12 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { SubcategoryService } from 'ClientApp/Services/subcategory.service';
+import { NotificationService } from 'ClientApp/app/services/notification.service';
 var EditSubcategoryComponent = /** @class */ (function () {
-    function EditSubcategoryComponent(formBuilder, router, apiService) {
+    function EditSubcategoryComponent(formBuilder, router, notification, apiService) {
         this.formBuilder = formBuilder;
         this.router = router;
+        this.notification = notification;
         this.apiService = apiService;
     }
     EditSubcategoryComponent.prototype.ngOnInit = function () {
@@ -58,7 +60,10 @@ var EditSubcategoryComponent = /** @class */ (function () {
             templateUrl: './edit-subcategory.component.html',
             styleUrls: ['./edit-subcategory.component.css']
         }),
-        __metadata("design:paramtypes", [FormBuilder, Router, SubcategoryService])
+        __metadata("design:paramtypes", [FormBuilder,
+            Router,
+            NotificationService,
+            SubcategoryService])
     ], EditSubcategoryComponent);
     return EditSubcategoryComponent;
 }());
