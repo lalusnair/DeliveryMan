@@ -40,7 +40,6 @@ C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFence.runt
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFence.runtimeconfig.dev.json
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFence.dll
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\bin\Debug\netcoreapp2.1\GeoFence.pdb
-C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.csprojAssemblyReference.cache
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.AssemblyInfoInputs.cache
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.AssemblyInfo.cs
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.csproj.CoreCompileInputs.cache
@@ -50,3 +49,4 @@ C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.Razo
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.dll
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.pdb
 C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.genruntimeconfig.cache
+C:\WorkSpace\DeliveryMan\GeoFence\GeoFence\obj\Debug\netcoreapp2.1\GeoFence.csprojAssemblyReference.cache
